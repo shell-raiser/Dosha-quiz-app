@@ -82,7 +82,7 @@ function nextques(){
 		else if (vath > 28 && pith > 28 && kafh > 28){
 			result.textContent="You belong to Ekadoshaja Prakruti (All three Dosha)";
 		}
-		probStats.textContent= "vatha"+vath+","+"Kafh"+kafh+","+"Pith"+pith;
+		probStats.textContent= "Vata"+vath+","+"Kapha"+kafh+","+"Pitta"+pith;
 		
 		return;
 	    }
