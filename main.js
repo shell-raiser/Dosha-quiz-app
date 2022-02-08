@@ -61,6 +61,7 @@ function nextques(){
 		vath = ((vath/tques)*100).toFixed(2);
 		pith = ((pith/tques)*100).toFixed(2);
 		kafh = ((kafh/tques)*100).toFixed(2);
+		
 		if(vath >= kafh && vath >= pith && vath > 80) {
 		result.textContent="You belong to Dwandwaja Vata";
 		}
@@ -79,8 +80,8 @@ function nextques(){
 		else if (vath+kafh > 70 && vath,kafh > 30 && vath,kafh > pith){
 			result.textContent="You belong to Dwidoshaja Kapha-Vata";
 		}
-		else if (vath > 28 && pith > 28 && kafh > 28){
-			result.textContent="You belong to Ekadoshaja Prakruti (All three Dosha)";
+		else if (vath > 29 && pith > 29 && kafh > 29){
+			result.textContent="You belong to Ekadoshaja Prakruti (Tri-Dosha)";
 		}
 		probStats.textContent= "Vata: "+vath+","+"Kapha: "+kafh+","+"Pitta: "+pith;
 		
