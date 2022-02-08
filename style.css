@@ -30,6 +30,7 @@ body{
 #question{
 	align-self:center;
 	text-align: center;
+	height: auto;
 	padding: 20px;
 	font-size: 22px;
 	background: #00cabe;
