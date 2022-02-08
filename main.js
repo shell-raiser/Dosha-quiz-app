@@ -35,7 +35,7 @@ give_ques(0);
 function nextques(){
 	var selected_ans= document.querySelector('input[type=radio]:checked');
 	if(!selected_ans){
-		alert("Please select an option before going to next question !");return;
+		alert("Please select an option before going to the next question !");return;
 	}
 
 	if(selected_ans.value==1){
@@ -62,22 +62,25 @@ function nextques(){
 		pith = ((pith/tques)*100).toFixed(2);
 		kafh = ((kafh/tques)*100).toFixed(2);
 		if(vath >= kafh && vath >= pith && vath > 80) {
-		result.textContent="vath";
+		result.textContent="You belong to Vata";
 		}
 		else if (pith >= vath && pith >= kafh && pith > 80) {
-		result.textContent="pitha";
+		result.textContent="You belong to Pitta";
 		}
 		else if (kafh >= vath && kafh >= pith && kafh > 80) {
-		result.textContent="kafha";
+		result.textContent="You belong to Kapha";
 		}
 		else if (vath+pith > 70 && vath,pith > 30 && vath,pith > kafh){
-			result.textContent="Vata and pitha";
+			result.textContent="You belong to Vata-Pitta";
 		}
 		else if (kafh+pith > 70 && kafh,pith > 30 && kafh,pith > vath){
-			result.textContent="kafa and pitha";
+			result.textContent="You belong to Pitta-Kapha";
 		}
 		else if (vath+kafh > 70 && vath,kafh > 30 && vath,kafh > pith){
-			result.textContent="Vata and kafa";
+			result.textContent="You belong to Kapha-Vata";
+		}
+		else if (vath > 28 && pith > 28 && kafh > 28){
+			result.textContent="You belong to Ekadoshaja Prakruti (All three Dosha)";
 		}
 		probStats.textContent= "vatha"+vath+","+"Kafh"+kafh+","+"Pith"+pith;
 		
