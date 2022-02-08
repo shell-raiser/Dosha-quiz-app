@@ -71,7 +71,7 @@ function nextques(){
 		else if (kafh >= vath && kafh >= pith && kafh > 80) {
 		result.textContent="You belong to Dwandwaja Kapha";
 		}
-		else if (vath > 29 && pith > 29 && kafh > 29){
+		else if (vath > 32 && pith > 32 && kafh > 32){
 			result.textContent="You belong to Ekadoshaja Prakruti (Tri-Dosha)";
 		}
 		else if (vath+pith > 70 && vath,pith > 30 && vath,pith > kafh){
