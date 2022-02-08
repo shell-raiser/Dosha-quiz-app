@@ -1,0 +1,30 @@
+<!Doctype HTML>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Dosha quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div id="heading"><h1 id="text" style="text-align:center;" >Dosha Quiz<h1></div>
+		
+			<div id="quiz" style="align-self: center;">
+				<div id="question"></div>
+				<label class="option"><input type="radio" name="option" value="1" /*style="display:none;"*/ /><span id="option1"></span></label>
+				<label class="option"><input type="radio" name="option" value="2" /*style="display:none;"*/ /><span id="option2"></span></label>
+				<label class="option"><input type="radio" name="option" value="3" /*style="display:none;"*/ /><span id="option3"></span></label>
+				<br>
+				<button id="next" onclick="nextques();">Next</button>
+				<div id="quesNo" ></div>
+			</div>
+			
+			<div id="probStats" style="display:none"></div>
+			<div id="result" style="display:none">
+			</div>
+			
+			<button id="quit" onclick="quit();">Quit</button>
+			<script type="text/javascript" src="questions.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
