@@ -52,6 +52,7 @@ body{
 	color: #f6f6f6;	
 }
 #next{
+	font-size: 100%;
 	background-color:#00cabe;
 	width:10%;
 	height: 5%px;
