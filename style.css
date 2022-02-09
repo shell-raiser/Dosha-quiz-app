@@ -23,7 +23,7 @@ body{
 	position: inherit;
 	background: rgb(158, 255, 218);
 	padding: 20px;
-	border: 2px solid #c6ffec;
+	/* border: 2px solid #c6ffec; */
 	border-radius: 10px;
 
 }
@@ -59,7 +59,7 @@ body{
 	max-width: 50px;
 	height: 5%px;
 	color:#01556e;
-	border: 1px solid #c6ffec;
+	border: 1px solid #00cabe;
 	border-radius: 5px;
 	cursor: pointer;
 	padding: 10px 10px;
