@@ -65,9 +65,9 @@ body{
 	padding: 10px 10px;
 	margin: auto;
 }
-#next:hover{
+/* #next:hover{
 	background-color:#90c7d4;
-}
+} */
 #quit{
 	position: absolute;
 	right:    0;
