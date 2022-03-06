@@ -28,7 +28,7 @@ function give_ques(quesindex)
 	opt1.textContent=questions[quesindex][1];
 	opt2.textContent=questions[quesindex][2];
 	opt3.textContent=questions[quesindex][3];
-        opt4.textContent=questions[quesindex][4];
+  opt4.textContent=questions[quesindex][4];
 	 return;
 };
 
@@ -48,7 +48,10 @@ function nextques(){
 	}
 	else if(selected_ans.value==3){
 		kafh = kafh +1
-		
+  }
+  else if(selected_ans.value==4){
+    vath = vath +1;
+  }
 	selected_ans.checked=false;
 	quesindex++;
 	if(quesindex==tques-1){
