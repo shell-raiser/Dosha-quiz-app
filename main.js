@@ -28,7 +28,9 @@ function give_ques(quesindex)
 	opt1.textContent=questions[quesindex][1];
 	opt2.textContent=questions[quesindex][2];
 	opt3.textContent=questions[quesindex][3];
+  if (quesiques[quesindex][4]!=""){
   opt4.textContent=questions[quesindex][4];
+  }
 	 return;
 };
 
