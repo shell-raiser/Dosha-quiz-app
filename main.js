@@ -3,6 +3,7 @@ var ques= document.getElementById("question");
 var opt1=document.getElementById("option1");
 var opt2=document.getElementById("option2");
 var opt3=document.getElementById("option3");
+var opt4=document.getElementById("option4");
 var res=document.getElementById("result");
 var nextbutton= document.getElementById("next");
 var q=document.getElementById('quit');
@@ -27,6 +28,7 @@ function give_ques(quesindex)
 	opt1.textContent=questions[quesindex][1];
 	opt2.textContent=questions[quesindex][2];
 	opt3.textContent=questions[quesindex][3];
+        opt4.textContent=questions[quesindex][4];
 	 return;
 };
 
@@ -46,8 +48,7 @@ function nextques(){
 	}
 	else if(selected_ans.value==3){
 		kafh = kafh +1
-	}
-
+		
 	selected_ans.checked=false;
 	quesindex++;
 	if(quesindex==tques-1){
