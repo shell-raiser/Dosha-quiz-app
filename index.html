@@ -27,7 +27,7 @@
 					<!--progress-->
 					<div class="progressContainer">
 						<progress class="progress is-info is-small" :value="(questionIndex/quiz.questions.length)*100" max="100">{{(questionIndex/quiz.questions.length)*100}}%</progress>
-						<p>{{(questionIndex/quiz.questions.length)*100}}% complete</p>
+						<p>{{((questionIndex/quiz.questions.length)*100).toFixed(0)}}% complete</p>
 					</div>
 					<!--/progress-->
 				</header>
@@ -72,15 +72,15 @@
 
 				<!-- quizCompletedIcon: Achievement Icon -->
 				<span class="icon">
-                <i class="fa" :class="score()>3?'fa-check-circle-o is-active':'fa-times-circle'"></i>
+                <!-- <i class="fa" :class="score()>3?'fa-check-circle-o is-active':'fa-times-circle'"></i> -->
               </span>
 
 				<!--resultTitleBlock-->
 				<h2 class="title">
-					You did {{ (score()>7?'an amazing':(score()<4?'a poor':'a good')) }} job!
+					You are {{ result }}
 				</h2>
 				<p class="subtitle">
-					Total score: {{ score() }} / {{ quiz.questions.length }}
+					{{ probStats }} / {{ quiz.questions.length }}
 				</p>
 					<br>
 					<a class="button" @click="restart()">restart <i class="fa fa-refresh"></i></a>
