@@ -305,4 +305,7 @@ var app = new Vue({
       return result;
 
       //return this.userResponses.filter(function(val) { return val }).length;
-    }} });
+    },
+  probStats: function(){
+    return this.probStats;
+  }} });

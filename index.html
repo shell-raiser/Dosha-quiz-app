@@ -77,10 +77,10 @@
 
 				<!--resultTitleBlock-->
 				<h2 class="title">
-					You are {{ result }}
+					{{ score() }}
 				</h2>
 				<p class="subtitle">
-					{{ probStats }} / {{ quiz.questions.length }}
+					Total score: {{ probStats() }}
 				</p>
 					<br>
 					<a class="button" @click="restart()">restart <i class="fa fa-refresh"></i></a>
