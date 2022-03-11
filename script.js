@@ -277,7 +277,32 @@ var app = new Vue({
         }
 
       }
-      return score;
+      vath = ((vath/tques)*100).toFixed(2);
+		  pith = ((pith/tques)*100).toFixed(2);
+		  kafh = ((kafh/tques)*100).toFixed(2);
+      if(vath >= kafh && vath >= pith && vath > 80) {
+        result = "You belong to Dwandwaja Vata";
+        }
+        else if (pith >= vath && pith >= kafh && pith > 80) {
+        result="You belong to Dwandwaja Pitta";
+        }
+        else if (kafh >= vath && kafh >= pith && kafh > 80) {
+        result ="You belong to Dwandwaja Kapha";
+        }
+        else if (vath > 31 && pith > 31 && kafh > 31){
+          result ="You belong to Ekadoshaja Prakruti (Tri-Dosha)";
+        }
+        else if (vath+pith > 70 && vath,pith > 30 && vath,pith > kafh){
+          result ="You belong to Dwidoshaja Vata-Pitta";
+        }
+        else if (kafh+pith > 70 && kafh,pith > 30 && kafh,pith > vath){
+          result ="You belong to Dwidoshaja Pitta-Kapha";
+        }
+        else if (vath+kafh > 70 && vath,kafh > 30 && vath,kafh > pith){
+          result ="You belong to Dwidoshaja Kapha-Vata";
+        }
+        probStats = "Vata: "+vath+","+"Kapha: "+kafh+","+"Pitta: "+pith;
+      return result;
 
       //return this.userResponses.filter(function(val) { return val }).length;
-    } } });
+    }} });
