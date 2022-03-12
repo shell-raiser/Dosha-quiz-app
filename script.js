@@ -1,42 +1,42 @@
 var quiz = {
   // user: "Dave",
   questions: [
-  {
-    text: "How is your Body Build?",
-    responses: [
-    { text: "Thin,Bony and small frammed, I hardly gain weight.", vath: true },
-    { text: "Medium Built, I Can gain or lose weight easily.", pith: true  },
-    { text: "Large Built, I Gain weight easily but difficult to lose", kafh: true  }] },
+  // {
+  //   text: "How is your Body Build?",
+  //   responses: [
+  //   { text: "Thin,Bony and small frammed, I hardly gain weight.", vath: true },
+  //   { text: "Medium Built, I Can gain or lose weight easily.", pith: true  },
+  //   { text: "Large Built, I Gain weight easily but difficult to lose", kafh: true  }] },
     
 
 
-  {
-    text: "How do you Walk and Talk?",
-    responses: [
-    { text: "Fast Walking and Talking.", vath: true },
-    { text: "Moderate Talk and Determined Walk", pith: true  },
-    { text: "Slow Talk and Steady Walk. ", kafh: true  }] },
+  // {
+  //   text: "How do you Walk and Talk?",
+  //   responses: [
+  //   { text: "Fast Walking and Talking.", vath: true },
+  //   { text: "Moderate Talk and Determined Walk", pith: true  },
+  //   { text: "Slow Talk and Steady Walk. ", kafh: true  }] },
 
 
-  {
-    text: "Which Weather you Like, or Very comfortable for you?",
-    responses: [
-    { text: "Enjoy warm climate but feel uncomfortable in cool weather. ", vath: true  },
-    { text: "Enjoy cool weather and don't like warm climate. ", pith: true  },
-    { text: "Comfortable for most of the year, but prefer Summer and Spring, Don't like Slightly wet climate. ",kafh: true }] },
-  {
-    text: "4. How often do you Sweat?",
-    responses: [
-    { text: "Sweat little but not much and have medium odour. ", vath: true  },
-    { text: "Sweat a lot and have strong odour. ", pith: true  },
-    { text: "Sweat moderately, but sweat a lot when working hard and have minimum odour. ",kafh: true }] },
+  // {
+  //   text: "Which Weather you Like, or Very comfortable for you?",
+  //   responses: [
+  //   { text: "Enjoy warm climate but feel uncomfortable in cool weather. ", vath: true  },
+  //   { text: "Enjoy cool weather and don't like warm climate. ", pith: true  },
+  //   { text: "Comfortable for most of the year, but prefer Summer and Spring, Don't like Slightly wet climate. ",kafh: true }] },
+  // {
+  //   text: "4. How often do you Sweat?",
+  //   responses: [
+  //   { text: "Sweat little but not much and have medium odour. ", vath: true  },
+  //   { text: "Sweat a lot and have strong odour. ", pith: true  },
+  //   { text: "Sweat moderately, but sweat a lot when working hard and have minimum odour. ",kafh: true }] },
   
-  {
-    text: "5. What is your Skin Type",
-    responses: [
-    { text: "Normal to dry, rough, thin and cool, with skin issues like dryness, dullness and wrinkly. ", vath: true  },
-    { text: "Normal to moist, soft, reddish, sensitive and warm, with skin issues like inflammation. ", pith: true  },
-    { text: "Normal to oily, soft, thick and cool, with skin issues like excessive oily, itching, fungal infections. ",kafh: true }] },
+  // {
+  //   text: "5. What is your Skin Type",
+  //   responses: [
+  //   { text: "Normal to dry, rough, thin and cool, with skin issues like dryness, dullness and wrinkly. ", vath: true  },
+  //   { text: "Normal to moist, soft, reddish, sensitive and warm, with skin issues like inflammation. ", pith: true  },
+  //   { text: "Normal to oily, soft, thick and cool, with skin issues like excessive oily, itching, fungal infections. ",kafh: true }] },
       
     
   {
