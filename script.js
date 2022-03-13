@@ -236,7 +236,12 @@ var app = new Vue({
     quiz: quiz,
     questionIndex: 0,
     userResponses: userResponseSkelaton,
-    isActive: false },
+    isActive: false,
+    vath: 0,
+    pith:0,
+    kafh: 0, 
+    probStats: 0,
+    result: ""},
 
   filters: {
     charIndex: function (i) {
@@ -266,15 +271,15 @@ var app = new Vue({
       for (let i = 0; i < this.userResponses.length; i++) {
         if (this.quiz.questions[i].responses[this.userResponses[i]].vath)
         {
-          vath = vath + 1;
+          this.vath = this.vath + 1;
         }
         else if (this.quiz.questions[i].responses[this.userResponses[i]].pith)
         {
-          pith = pith + 1;
+          this.pith = this.pith + 1;
         }
         else if (this.quiz.questions[i].responses[this.userResponses[i]].kafh)
         {
-          kafh = kafh + 1;
+          this.kafh = this.kafh + 1;
         }
 
       }
@@ -282,28 +287,28 @@ var app = new Vue({
 		  pith = ((pith/tques)*100).toFixed(2);
 		  kafh = ((kafh/tques)*100).toFixed(2);
       if(vath >= kafh && vath >= pith && vath > 80) {
-        result = "You belong to Dwandwaja Vata";
+        this.result = "You belong to Dwandwaja Vata";
         }
         else if (pith >= vath && pith >= kafh && pith > 80) {
-        result="You belong to Dwandwaja Pitta";
+        this.result="You belong to Dwandwaja Pitta";
         }
         else if (kafh >= vath && kafh >= pith && kafh > 80) {
-        result ="You belong to Dwandwaja Kapha";
+        this.result ="You belong to Dwandwaja Kapha";
         }
         else if (vath > 31 && pith > 31 && kafh > 31){
-          result ="You belong to Ekadoshaja Prakruti (Tri-Dosha)";
+          this.result ="You belong to Ekadoshaja Prakruti (Tri-Dosha)";
         }
         else if (vath+pith > 70 && vath,pith > 30 && vath,pith > kafh){
-          result ="You belong to Dwidoshaja Vata-Pitta";
+          this.result ="You belong to Dwidoshaja Vata-Pitta";
         }
         else if (kafh+pith > 70 && kafh,pith > 30 && kafh,pith > vath){
-          result ="You belong to Dwidoshaja Pitta-Kapha";
+          this.result ="You belong to Dwidoshaja Pitta-Kapha";
         }
         else if (vath+kafh > 70 && vath,kafh > 30 && vath,kafh > pith){
-          result ="You belong to Dwidoshaja Kapha-Vata";
+          this.result ="You belong to Dwidoshaja Kapha-Vata";
         }
         probStats = "Vata: "+vath+","+"Kapha: "+kafh+","+"Pitta: "+pith;
-      return result;
+      return this.result;
 
       //return this.userResponses.filter(function(val) { return val }).length;
     },
