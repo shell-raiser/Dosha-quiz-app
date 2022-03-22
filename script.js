@@ -4,9 +4,9 @@ var quiz = {
     {
       text: "How is your Body Build?",
       responses: [
-        { text: "Thin,Bony and small frammed, I hardly gain weight.", vath: this.vath+1 },
-        { text: "Medium Built, I Can gain or lose weight easily.", pith: this.pith+1 },
-        { text: "Large Built, I Gain weight easily but difficult to lose", kafh: this.kafh+1 }]
+        { text: "Thin,Bony and small frammed, I hardly gain weight."},
+        { text: "Medium Built, I Can gain or lose weight easily."},
+        { text: "Large Built, I Gain weight easily but difficult to lose"}]
     },
 
 
@@ -43,10 +43,10 @@ var quiz = {
     {
       text: "How is the texture of your Hair?",
       responses: [
-        { text: "Rough, Dry and Wavy. I get split ends easily. ", vath: this.vath+1 },
-        { text: "Normal, Straight, Thin and brownish. ", pith: this.pith+1 },
-        { text: "Thick, Curly and oily. Hair color tends to be darker side. ", kafh: this.kafh+1 },
-        { text: "I'm Bald from young age. ", vath: this.vath+1 }]
+        { text: "Rough, Dry and Wavy. I get split ends easily. ", vath: true },
+        { text: "Normal, Straight, Thin and brownish. ", pith: true },
+        { text: "Thick, Curly and oily. Hair color tends to be darker side. ", kafh: true },
+        { text: "I'm Bald from young age. ", vath: true }]
     },
     // {
     // text: "Tell us about your Lips",
@@ -263,8 +263,11 @@ var app = new Vue({
       //console.log(this.userResponses);
     },
     next: function () {
-      if (this.questionIndex < this.quiz.questions.length)
-        this.questionIndex++;
+      if (this.questionIndex < this.quiz.questions.length){
+        this.questionIndex += 1;
+      }
+      
+
       console.log("Next pressed")
     },
 
@@ -274,27 +277,31 @@ var app = new Vue({
     // Return "true" count in userResponses
     score: function () {
       console.log("Score() ran")
+      
+      // var score = 0;
+      for (let j=0; j<this.quiz.questions.length; j++){
+        for (let i = 0; i < this.userResponses.length; i++) {
+          if (this.quiz.questions[i].responses[this.userResponses[i]].vath) {
+            this.vath = this.vath + 1;
+            console.log("1st if");
+          }
+          else if (this.quiz.questions[i].responses[this.userResponses[i]].pith) {
+            this.pith = this.pith + 1;
+            console.log("1st if");
+          }
+          else if (this.quiz.questions[i].responses[this.userResponses[i]].kafh) {
+            this.kafh = this.kafh + 1;
+            console.log("1st if");
+          }
+        }
+      }
+      
+      this.vath = ((this.vath / this.quiz.questions.length) * 100);
+      this.pith = ((this.pith / this.quiz.questions.length) * 100);
+      this.kafh = ((this.kafh / this.quiz.questions.length) * 100);
       console.log(this.vath)
       console.log(this.pith)
       console.log(this.kafh)
-      // var score = 0;
-      for (let i = 0; i < this.userResponses.length; i++) {
-        // if (this.quiz.questions[i].responses[this.userResponses[i]].vath) {
-        //   this.vath = this.vath + 1;
-        //   console.log("1st if");
-        // }
-        // else if (this.quiz.questions[i].responses[this.userResponses[i]].pith) {
-        //   this.pith = this.pith + 1;
-        //   console.log("1st if");
-        // }
-        // else if (this.quiz.questions[i].responses[this.userResponses[i]].kafh) {
-        //   this.kafh = this.kafh + 1;
-        // }
-
-      }
-      this.vath = ((this.vath / this.tques) * 100);
-      this.pith = ((this.pith / this.tques) * 100);
-      this.kafh = ((this.kafh / this.tques) * 100);
       if (this.vath >= this.kafh && this.vath >= this.pith && this.vath > 80) {
         this.result = "You belong to Dwandwaja Vata";
         console.log("1st if inside");
@@ -318,6 +325,7 @@ var app = new Vue({
         this.result = "You belong to Dwidoshaja Kapha-Vata";
       }
       probStats = "Vata: " + this.vath + "," + "Kapha: " + this.kafh + "," + "Pitta: " + this.pith;
+      
       return this.result;
 
       //return this.userResponses.filter(function(val) { return val }).length;
