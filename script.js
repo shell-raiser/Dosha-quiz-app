@@ -324,7 +324,8 @@ var app = new Vue({
       else if (this.vath + this.kafh > 70 && this.vath, this.kafh > 30 && this.vath, this.kafh > this.pith) {
         this.result = "You belong to Dwidoshaja Kapha-Vata";
       }
-      probStats = "Vata: " + this.vath + "," + "Kapha: " + this.kafh + "," + "Pitta: " + this.pith;
+      this.probStats = String("Vata: " + this.vath + "," + "Kapha: " + this.kafh + "," + "Pitta: " + this.pith);
+      console.log(this.probStats);
       
       return this.result;
 
