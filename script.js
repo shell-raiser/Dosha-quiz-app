@@ -339,13 +339,31 @@ var app = new Vue({
         this.result = "You belong to Ekadoshaja Prakruti (Tri-Dosha)";
       }
       else if (this.vath + this.pith > 70 && this.vath, this.pith > 30 && this.vath, this.pith > this.kafh) {
-        this.result = "You belong to Dwidoshaja Vata-Pitta";
+        if (this.vath > this.pith){
+          this.result = "You belong to Dwidoshaja Vata-Pitta";
+        }
+        else{
+          this.result = "You belong to Dwidoshaja Pitta-Vata";
+        }
+        
       }
       else if (this.kafh + this.pith > 70 && this.kafh, this.pith > 30 && this.kafh, this.pith > this.vath) {
-        this.result = "You belong to Dwidoshaja Pitta-Kapha";
+        if (this.pith > this.kafh){
+          this.result = "You belong to Dwidoshaja Pitta-Kapha";
+        }
+        else{
+          this.result = "You belong to Dwidoshaja Kapha-Pitta";
+        }
+        
       }
       else if (this.vath + this.kafh > 70 && this.vath, this.kafh > 30 && this.vath, this.kafh > this.pith) {
-        this.result = "You belong to Dwidoshaja Kapha-Vata";
+        if (this.kafh > this.vath){
+          this.result = "You belong to Dwidoshaja Kapha-Vata";
+        }
+        else{
+          this.result = "You belong to Dwidoshaja Vata-Kapha";
+        }
+        
       }
       this.probStats = String("Vata: " + this.vath + "," + "Kapha: " + this.kafh + "," + "Pitta: " + this.pith);
       // console.log(this.probStats);
