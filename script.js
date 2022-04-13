@@ -260,14 +260,32 @@ var app = new Vue({
     selectOption: function (index) {
       Vue.set(this.userResponses, this.questionIndex, index);
       //console.log(this.userResponses);
+      console.log(this.userResponses)
     },
     next: function () {
       if (this.questionIndex < this.quiz.questions.length){
         this.questionIndex += 1;
       }
-      
+
+      // for (let i = 1; i < (this.userResponses.length); i++) {
+      //   if (this.quiz.questions[i].responses[this.userResponses[0]].vath) {
+      //     this.vath = this.vath + 1;
+      //     // console.log("1st if");
+      //   }
+      //   else if (this.quiz.questions[i].responses[this.userResponses[0]].pith) {
+      //     this.pith = this.pith + 1;
+      //     // console.log("1st if");
+      //   }
+      //   else if (this.quiz.questions[i].responses[this.userResponses[0]].kafh) {
+      //     this.kafh = this.kafh + 1;
+      //     // console.log("1st if");
+      //   }
+      // }
+
+
       if (this.quiz.questions.length == this.questionIndex){
         this.score();
+        // probStats();
       }
       
 
@@ -279,26 +297,26 @@ var app = new Vue({
     },
     // Return "true" count in userResponses
     score: function () {
-      console.log("Score() ran")
-      // this.vath = 0;
-      // this.pith = 0;
-      // this.kafh = 0;
+      console.log("Score() ran");
+      this.vath = 0;
+      this.pith = 0;
+      this.kafh = 0;
       // var score = 0;
-      for (let j=0; j<this.quiz.questions.length; j++){
-        for (let i = 0; i < this.userResponses.length; i++) {
-          if (this.quiz.questions[i].responses[this.userResponses[i]].vath) {
-            this.vath = this.vath + 1;
-            // console.log("1st if");
-          }
-          else if (this.quiz.questions[i].responses[this.userResponses[i]].pith) {
-            this.pith = this.pith + 1;
-            // console.log("1st if");
-          }
-          else if (this.quiz.questions[i].responses[this.userResponses[i]].kafh) {
-            this.kafh = this.kafh + 1;
-            // console.log("1st if");
-          }
+
+      for (let j=0; j<this.userResponses.length; j++){
+        if (this.userResponses[j] == 0) {
+          this.vath = this.vath + 1;
+          console.log(this.vath)
+          // console.log("1st if");
         }
+        else if (this.userResponses[j] == 1) {
+          this.pith = this.pith + 1;
+          // console.log("1st if");
+        }
+        else if (this.userResponses[j] == 2) {
+          this.kafh = this.kafh + 1;
+          // console.log("1st if");
+      }
       }
       
       this.vath = ((this.vath / this.quiz.questions.length) * 100);
@@ -307,14 +325,14 @@ var app = new Vue({
       console.log(this.vath)
       console.log(this.pith)
       console.log(this.kafh)
-      if (this.vath > this.kafh && this.vath > this.pith && this.vath > 80) {
+      if (this.vath >= this.kafh && this.vath >= this.pith && this.vath > 80) {
         this.result = "You belong to Dwandwaja Vata";
         // console.log("1st if inside");
       }
-      else if (this.pith > this.vath && this.pith > this.kafh && this.pith > 80) {
+      else if (this.pith >= this.vath && this.pith >= this.kafh && this.pith > 80) {
         this.result = "You belong to Dwandwaja Pitta";
       }
-      else if (this.kafh > this.vath && this.kafh > this.pith && this.kafh > 80) {
+      else if (this.kafh >= this.vath && this.kafh >= this.pith && this.kafh > 80) {
         this.result = "You belong to Dwandwaja Kapha";
       }
       else if (this.vath > 31 && this.pith > 31 && this.kafh > 31) {
@@ -330,7 +348,7 @@ var app = new Vue({
         this.result = "You belong to Dwidoshaja Kapha-Vata";
       }
       this.probStats = String("Vata: " + this.vath + "," + "Kapha: " + this.kafh + "," + "Pitta: " + this.pith);
-      console.log(this.probStats);
+      // console.log(this.probStats);
       
       return this.result;
 
@@ -338,7 +356,7 @@ var app = new Vue({
     },
 
     // probStats: function () {
-    //   return this.result;
+    //   return this.probStats;
     // },
   }
 });
