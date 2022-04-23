@@ -5,7 +5,6 @@
 	<title>Dosha quiz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body>
 	<div id="heading"><h1 id="text" style="text-align:center;" >Dosha Quiz<h1></div>
 		
@@ -25,6 +24,31 @@
 			
 			<button id="quit" onclick="quit();">Quit</button>
 			<script type="text/javascript" src="questions.js"></script>
+<!--BMI Calculator HTML-->
+			<div class="container">
+				<div class="panel">
+					<h2 class="text-center">Check your BMI</h2>
+					
+						<p id="introText" class="text-center">Enter your weight and height below to check your BMI results</p>
+						
+						<form>
+							<div id="weightInput">
+								<p>Put your weight in here (KG)</p>
+								 <input id="weight" type="number" name="a" />
+							</div>
+							<div id="heightInput">
+								<p>And your height in here (CM)</p>
+								 <input id="height" type="number" name="b"/> 
+							</div>
+						 <button type="button" class="btn" onclick="calculate()">Calculate BMI</button>
+					</form>
+		
+					<div id="results" class="text-center">Your BMI results will appear here</div>
+				</div>
+			</div>
 	<script type="text/javascript" src="main.js"></script>
+	
+
 </body>
+
 </html>
