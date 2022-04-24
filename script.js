@@ -227,7 +227,124 @@ var quiz = {
   ]
 }
 
+let dateObj = new Date();
+var foodData = {
+    kafh: {
+        0: {
+            breakfast: "Barley tea, oats,  Banana,pistachio nuts( in small quantities)",
+            lunch: "barley, rice, leafy green vegetables,",
+            dinner: ""
 
+        },
+        1: {
+            breakfast: "Cinnamon tea, millet,  carrot, cherris",
+            lunch: "millet, rice, cauliflower ,garlic, green beans, ",
+            dinner: ""
+        },
+        2: {
+            breakfast: "Ginger tea, Pasta, Tamato, Guava, Pine nuts( in small quantities) ",
+            lunch: "rice, barley, wheat, fish, chicken ",
+            dinner: ""
+        },
+        3: {
+            breakfast: "Lemon tea, green beans, Sprouts, Grapes",
+            lunch: "rye, rice, green beans, onion, spinach,   ,chicken ,",
+            dinner: ""
+        },
+        4: {
+            breakfast: "Clove tea, pomegranate juice, Alomnds(soaked+ peeled",
+            lunch: "rice, bean sprouts, leafy greens,",
+            dinner: ""
+        },
+        5: {
+            breakfast: "Lemon grass tea, yogurt(diluted with 2parts of water) ",
+            lunch: "rice, barley, leafy greens, bean sprouts ,duck, ",
+            dinner: ""
+        },
+        6: {
+            breakfast: "Red clove tea, egg whites, pineapple juice ",
+            lunch: "rice, chicken, fish, barley, meat",
+            dinner: ""
+        }
+    },
+    vath: {
+        0: {
+            breakfast: " Rice Or wheat kichidi , soup of green gram, Milk with Cinnamon and Almond powder",
+            lunch: "rice ,carrots, green beans, coconut, ghee, ginger ",
+            dinner: "Durham flour chapati,carrots ,cherries, Beans,apple juice, Jaggery "
+
+        },
+        1: {
+            breakfast: "Green and fresh herb frittata, lemon, orange...juice, Apple, grape fruits with honey  and ginger",
+            lunch: "rice cakes, wheat, cucumber, sprouts, apricots, kiwi, buttermilk ",
+            dinner: "Rice, Turnip,strawberries, mung dhal, Buttermilk, soyasauce,orrange juice (sweet)"
+        },
+        2: {
+            breakfast: "Rice soup with ghee and ginger, slices of Banana ,lemon juice, fresh coriander juice",
+            lunch: "rice, cabbage, sweet potato, orange, urad Dal, buttermilk, cashews, coconut, ",
+            dinner: "Quinoa,fish, cucumber, plum,tur dal ,fiberts, olives, carrot juice "
+        },
+        3: {
+            breakfast: "Hot cereals with soaked oatsand ghee, Apricots with cardamom, Banana , juice with kale, lime and cardamom",
+            lunch: "rice, cabbage, sweet potato, orange, urad Dal, buttermilk, cashews, coconut, ",
+            dinner: "wheat flour dosa or chapati ,Leafy greens , avocado, cow milk,Beans,saffron with milk"
+        },
+        4: {
+            breakfast: "mashed sweet potato rice  + Ginger+ pepper,mango lassi, warm water with pepper and jeera",
+            lunch: "wheat, carrots, cherries, mung Dal, buttermilk, walnuts, peanut apple juice honey ",
+            dinner: "seitan,corn,grapes,ghee,mango juice, cumine,fish,ice cream "
+        },
+        5: {
+            breakfast: "paneer burji, sweet dessert of wheat and dry fruits",
+            lunch: "rice, cucumber, banana, buttermilk, walnuts, chai, ginger, basil, sugarcane juice ",
+            dinner: "Durham flour chapati, radish, plum,olives, mung beans,apples,pine nuts,apple juice, "
+        },
+        6: {
+            breakfast: "Pasta +ghee, cereals with ginger and lime",
+            lunch: "pasta oats, sweet potato, apples, strawberry, tur Dal, buttermilk, almonds cashews, apple juice grape juice,garlic,ginger,honey jaggery",
+            dinner: "Rice ,cucumber, bananas, Beans,ghee,fish,carrots, Jaggery, kulfi or ice cream "
+        }
+    },
+    pith: {
+        0: {
+            breakfast: "Cereal, Almond milk, Herbal tea, water melon, Apple, brocolli",
+            lunch: "rice(basmati) ,barley ,cauliflower ,wheat, yoghurt ,ghee",
+            dinner: "Rice, wheat, asparagus, Alives,peas, lemon juice"
+
+        },
+        1: {
+            breakfast: "Oats + maple syrup, Apple juice/ Herbal tea, strawberries , blueberries, cabbage",
+            lunch: "cabbage, cucumber , rice,green beans, peas, pumpkin ",
+            dinner: "Cabbage, spinach, potatoes, rice, cucumber "
+        },
+        2: {
+            breakfast: "Pancakes + Honey, Goat milk/ herbal tea, melons, grapes, cucumber",
+            lunch: "tur dal ,urad dal,rice,soy beans , yoghurt ",
+            dinner: "apples,potatoes,rice,spinach,lemon juice,cherries,goat milk"
+        },
+        3: {
+            breakfast: "Pasta + brocolli, Grape juice / herbal tea, pomegranates, berries, corn",
+            lunch: "mixed green vegetables rice, yoghurt, cucumber ",
+            dinner: "cool dairy drinks,goat milk,mango juice ,lemon grass,rice,asparagus"
+        },
+        4: {
+            breakfast: "oats bran + honey, Barley tea, Avocado, sweet potato",
+            lunch: "grain teas, kidney beans,rice, yoghurt, cucumber ,",
+            dinner: "Fresh fruit juices, fresh basil leaves, goat milk, olive oil, rice, fresh water fish"
+        },
+        5: {
+            breakfast: "Tapioca + spices ( pepper etc;), coconut milk, Apricots , sprouts",
+            lunch: " wheat ,paneer, rice, ,yoghurt ",
+            dinner: "Ghee, almonds, coconut, fresh cool dairy products, cows milk, cherries, spinach, cherries "
+        },
+        6: {
+            breakfast: "Quinoa + spices, milk/ Herbal tea, cabbage , chiken, brocolli, berries , Apple",
+            lunch: "chicken,rice,egg whites , fresh water fish",
+            dinner: "Asparagus, ghee, goat cheese, peas, potatoes, cucumber, watermelon, rice, spinach, asparagus "
+        }
+    }
+
+}
 
 
 userResponseSkelaton = Array(quiz.questions.length).fill(null);
@@ -236,6 +353,7 @@ var app = new Vue({
   el: "#app",
   data: {
     quiz: quiz,
+    doshaMode: true,
     questionIndex: 0,
     userResponses: userResponseSkelaton,
     isActive: false,
@@ -257,6 +375,10 @@ var app = new Vue({
     //   this.questionIndex = 0;
     //   this.userResponses = Array(this.quiz.questions.length).fill(null);
     // },
+    dietMode: function(){
+      this.doshaMode = false;
+      
+    },
     selectOption: function (index) {
       Vue.set(this.userResponses, this.questionIndex, index);
       //console.log(this.userResponses);
