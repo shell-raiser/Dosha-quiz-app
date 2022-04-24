@@ -60,20 +60,22 @@
 					</div>
 
 					<!--quizFooter: navigation and progress-->
-					<footer v-if="doshaMode" class="questionFooter">
+					<footer class="questionFooter">
 
 						<!--pagination-->
 						<nav class="pagination" role="navigation" aria-label="pagination">
 
 							<!-- back button -->
-							<a class="button" v-on:click="prev();" :disabled="questionIndex < 1">
+							<a class="button" v-on:click="prev();" :disabled="questionIndex < 1 || doshaMode">
 								Back
 							</a>
-							<a v-if="questionIndex==0" v-on:click="dietMode();"> Click to see diet</a>
+
+							<a class="button" v-on:click="dietMode();" :disabled="questionIndex < 0 || doshaMode"> Click to see diet</a>
+
 							<!-- next button -->
 							<a class="button" :class="(userResponses[questionIndex]==null)?'':'is-active'"
-								v-on:click="next();" :disabled="questionIndex>=quiz.questions.length">
-								{{ (userResponses[questionIndex]==null)?'Skip':'Next' }}
+								v-on:click="next();" :disabled="questionIndex>=quiz.questions.length || doshaMode">
+								{{ 'Next' }}
 							</a>
 
 						</nav>
