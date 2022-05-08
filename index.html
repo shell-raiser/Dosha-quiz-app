@@ -42,22 +42,23 @@
 
 					<!-- questionTitle -->
 					<h2 v-if="doshaMode" class="titleContainer title">{{ quiz.questions[questionIndex].text }}</h2>
-					<h2 v-else class="titleContainer title"> Breakfast</h2>
+					<h2 v-else class="titleContainer title"> Diet</h2>
 
 					<!-- quizOptions -->
-					<div v-if="doshaMode" class="optionContainer">
-						<div class="option" v-for="(response, index) in quiz.questions[questionIndex].responses"
+					<div class="optionContainer">
+						<div v-if="doshaMode" class="option"
+							v-for="(response, index) in quiz.questions[questionIndex].responses"
 							@click="selectOption(index)"
 							:class="{ 'is-selected': userResponses[questionIndex] == index}" :key="index">
 							{{ index | charIndex }}. {{ response.text }}
 						</div>
-					</div>
-					<div v-else>
-						<div v-for="(response, index) in foodData.questions[questionIndex].responses" :key="index">
-							{{ index | charIndex }}. {{ response.text }}
-						</div>
 
+						<!-- <div v-else v-for="(kafh, index) in foodData.kafh" :key="index">
+							{{ index | charIndex }}. {{ response.text }}
+						</div> -->
+						<div v-else> Diet will be here</div>
 					</div>
+				
 
 					<!--quizFooter: navigation and progress-->
 					<footer class="questionFooter">
@@ -66,14 +67,14 @@
 						<nav class="pagination" role="navigation" aria-label="pagination">
 
 							<!-- back button -->
-							<a class="button" v-on:click="prev();" :disabled="questionIndex < 1 || doshaMode">
+							<a v-if="doshaMode" class="button" v-on:click="prev();" :disabled="questionIndex < 1 || doshaMode">
 								Back
 							</a>
 
-							<a class="button" v-on:click="dietMode();" :disabled="questionIndex < 0 || doshaMode"> Click to see diet</a>
+							<a v-if="doshaMode" class="button" v-on:click="dietMode();"> Click to see diet</a>
 
 							<!-- next button -->
-							<a class="button" :class="(userResponses[questionIndex]==null)?'':'is-active'"
+							<a v-if="doshaMode" class="button" :class="(userResponses[questionIndex]==null)?'':'is-active'"
 								v-on:click="next();" :disabled="questionIndex>=quiz.questions.length || doshaMode">
 								{{ 'Next' }}
 							</a>
