@@ -234,7 +234,6 @@ var foodData = {
             breakfast: "Barley tea, oats,  Banana,pistachio nuts( in small quantities)",
             lunch: "barley, rice, leafy green vegetables,",
             dinner: ""
-
         },
         1: {
             breakfast: "Cinnamon tea, millet,  carrot, cherris",
@@ -353,7 +352,7 @@ var app = new Vue({
   el: "#app",
   data: {
     quiz: quiz,
-    doshaMode: true,
+    doshaMode: true,  
     questionIndex: 0,
     userResponses: userResponseSkelaton,
     isActive: false,
@@ -377,7 +376,8 @@ var app = new Vue({
     // },
     dietMode: function(){
       this.doshaMode = false;
-      
+      console.log("diet button pressed");
+      console.log(this.doshaMode);  
     },
     selectOption: function (index) {
       Vue.set(this.userResponses, this.questionIndex, index);
