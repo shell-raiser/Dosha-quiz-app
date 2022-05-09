@@ -46,19 +46,21 @@
 
 					<!-- quizOptions -->
 					<div class="optionContainer">
-						<div v-if="doshaMode" class="option"
-							v-for="(response, index) in quiz.questions[questionIndex].responses"
+						<div v-for="(response, index) in quiz.questions[questionIndex].responses" v-if="doshaMode" class="option"
+							
 							@click="selectOption(index)"
 							:class="{ 'is-selected': userResponses[questionIndex] == index}" :key="index">
 							{{ index | charIndex }}. {{ response.text }}
 						</div>
 
-						<!-- <div v-else v-for="(kafh, index) in foodData.kafh" :key="index">
-							{{ index | charIndex }}. {{ response.text }}
-						</div> -->
-						<div v-else> Diet will be here</div>
+						<!-- <div v-else class="option" > </div> -->
+						<div v-else class="option" >
+							{{foodData.kafh[dateObj.getDay()].breakfast}}
+							{{foodData.kafh[dateObj.getDay()].lunch}}
+							{{foodData.kafh[dateObj.getDay()].dinner}}
+						</div>
 					</div>
-				
+
 
 					<!--quizFooter: navigation and progress-->
 					<footer class="questionFooter">
@@ -67,15 +69,17 @@
 						<nav class="pagination" role="navigation" aria-label="pagination">
 
 							<!-- back button -->
-							<a v-if="doshaMode" class="button" v-on:click="prev();" :disabled="questionIndex < 1 || doshaMode">
+							<a v-if="doshaMode" class="button" v-on:click="prev();"
+								:disabled="questionIndex < 1 || doshaMode">
 								Back
 							</a>
 
 							<a v-if="doshaMode" class="button" v-on:click="dietMode();"> Click to see diet</a>
 
 							<!-- next button -->
-							<a v-if="doshaMode" class="button" :class="(userResponses[questionIndex]==null)?'':'is-active'"
-								v-on:click="next();" :disabled="questionIndex>=quiz.questions.length || doshaMode">
+							<a v-if="doshaMode" class="button"
+								:class="(userResponses[questionIndex]==null)?'':'is-active'" v-on:click="next();"
+								:disabled="questionIndex>=quiz.questions.length || doshaMode">
 								{{ 'Next' }}
 							</a>
 
