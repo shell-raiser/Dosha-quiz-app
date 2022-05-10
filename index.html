@@ -73,7 +73,7 @@
 								Back
 							</a>
 
-							<a v-if="doshaMode" class="button" v-on:click="dietMode();"> Click to see diet</a>
+							<a v-if="doshaMode && questionIndex == 0" class="button" v-on:click="dietMode();">See Diet</a>
 
 							<!-- next button -->
 							<a v-if="doshaMode" class="button"
@@ -108,7 +108,7 @@
 						{{ probStats }}
 					</p>
 					<br>
-					<a class="button" @click="restart()">restart <i class="fa fa-refresh"></i></a>
+					<a class="button" @click="dietMode()">See diet <i class="fa fa-refresh"></i></a>
 					<!--/resultTitleBlock-->
 
 				</div>
