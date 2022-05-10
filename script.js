@@ -233,37 +233,37 @@ var foodData = {
         0: {
             Breakfast: "Barley tea, oats,  Banana,pistachio nuts( in small quantities)",
             Lunch: "barley, rice, leafy green vegetables,",
-            Dinner: ""
+            Dinner: "Durham flour in small quantity, leafy greens,bitter gourd,beans"
         },
         1: {
             Breakfast: "Cinnamon tea, millet,  carrot, cherris",
             Lunch: "millet, rice, cauliflower ,garlic, green beans, ",
-            Dinner: ""
+            Dinner: "Lentiles,onion,mushroom,cooked tomatoes,leafy greens,garlic,oils"
         },
         2: {
             Breakfast: "Ginger tea, Pasta, Tamato, Guava, Pine nuts( in small quantities) ",
             Lunch: "rice, barley, wheat, fish, chicken ",
-            Dinner: ""
+            Dinner: "Legumes,prickly pear,spinach,garlic."
         },
         3: {
             Breakfast: "Lemon tea, green beans, Sprouts, Grapes",
             Lunch: "rye, rice, green beans, onion, spinach,   ,chicken ,",
-            Dinner: ""
+            Dinner: "Mung beans,Ghee,goat milk,fresh paneer,beans."
         },
         4: {
             Breakfast: "Clove tea, pomegranate juice, Alomnds(soaked+ peeled",
             Lunch: "rice, bean sprouts, leafy greens,",
-            Dinner: ""
+            Dinner: "Chicken,Egg white,ginger,leafy greens."
         },
         5: {
             Breakfast: "Lemon grass tea, yogurt(diluted with 2parts of water) ",
             Lunch: "rice, barley, leafy greens, bean sprouts ,duck, ",
-            Dinner: ""
+            Dinner: "Fish,Onions,Coriander,Peas"
         },
         6: {
             Breakfast: "Red clove tea, egg whites, pineapple juice ",
             Lunch: "rice, chicken, fish, barley, meat",
-            Dinner: ""
+            Dinner: "Pinto beans,Thur dal,Broccoli, Mushrooms"
         }
     },
     vath: {
