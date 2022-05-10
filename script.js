@@ -231,115 +231,115 @@ let dateObj = new Date();
 var foodData = {
     kafh: {
         0: {
-            breakfast: "Barley tea, oats,  Banana,pistachio nuts( in small quantities)",
-            lunch: "barley, rice, leafy green vegetables,",
-            dinner: ""
+            Breakfast: "Barley tea, oats,  Banana,pistachio nuts( in small quantities)",
+            Lunch: "barley, rice, leafy green vegetables,",
+            Dinner: ""
         },
         1: {
-            breakfast: "Cinnamon tea, millet,  carrot, cherris",
-            lunch: "millet, rice, cauliflower ,garlic, green beans, ",
-            dinner: ""
+            Breakfast: "Cinnamon tea, millet,  carrot, cherris",
+            Lunch: "millet, rice, cauliflower ,garlic, green beans, ",
+            Dinner: ""
         },
         2: {
-            breakfast: "Ginger tea, Pasta, Tamato, Guava, Pine nuts( in small quantities) ",
-            lunch: "rice, barley, wheat, fish, chicken ",
-            dinner: ""
+            Breakfast: "Ginger tea, Pasta, Tamato, Guava, Pine nuts( in small quantities) ",
+            Lunch: "rice, barley, wheat, fish, chicken ",
+            Dinner: ""
         },
         3: {
-            breakfast: "Lemon tea, green beans, Sprouts, Grapes",
-            lunch: "rye, rice, green beans, onion, spinach,   ,chicken ,",
-            dinner: ""
+            Breakfast: "Lemon tea, green beans, Sprouts, Grapes",
+            Lunch: "rye, rice, green beans, onion, spinach,   ,chicken ,",
+            Dinner: ""
         },
         4: {
-            breakfast: "Clove tea, pomegranate juice, Alomnds(soaked+ peeled",
-            lunch: "rice, bean sprouts, leafy greens,",
-            dinner: ""
+            Breakfast: "Clove tea, pomegranate juice, Alomnds(soaked+ peeled",
+            Lunch: "rice, bean sprouts, leafy greens,",
+            Dinner: ""
         },
         5: {
-            breakfast: "Lemon grass tea, yogurt(diluted with 2parts of water) ",
-            lunch: "rice, barley, leafy greens, bean sprouts ,duck, ",
-            dinner: ""
+            Breakfast: "Lemon grass tea, yogurt(diluted with 2parts of water) ",
+            Lunch: "rice, barley, leafy greens, bean sprouts ,duck, ",
+            Dinner: ""
         },
         6: {
-            breakfast: "Red clove tea, egg whites, pineapple juice ",
-            lunch: "rice, chicken, fish, barley, meat",
-            dinner: ""
+            Breakfast: "Red clove tea, egg whites, pineapple juice ",
+            Lunch: "rice, chicken, fish, barley, meat",
+            Dinner: ""
         }
     },
     vath: {
         0: {
-            breakfast: " Rice Or wheat kichidi , soup of green gram, Milk with Cinnamon and Almond powder",
-            lunch: "rice ,carrots, green beans, coconut, ghee, ginger ",
-            dinner: "Durham flour chapati,carrots ,cherries, Beans,apple juice, Jaggery "
+            Breakfast: " Rice Or wheat kichidi , soup of green gram, Milk with Cinnamon and Almond powder",
+            Lunch: "rice ,carrots, green beans, coconut, ghee, ginger ",
+            Dinner: "Durham flour chapati,carrots ,cherries, Beans,apple juice, Jaggery "
 
         },
         1: {
-            breakfast: "Green and fresh herb frittata, lemon, orange...juice, Apple, grape fruits with honey  and ginger",
-            lunch: "rice cakes, wheat, cucumber, sprouts, apricots, kiwi, buttermilk ",
-            dinner: "Rice, Turnip,strawberries, mung dhal, Buttermilk, soyasauce,orrange juice (sweet)"
+            Breakfast: "Green and fresh herb frittata, lemon, orange...juice, Apple, grape fruits with honey  and ginger",
+            Lunch: "rice cakes, wheat, cucumber, sprouts, apricots, kiwi, buttermilk ",
+            Dinner: "Rice, Turnip,strawberries, mung dhal, Buttermilk, soyasauce,orrange juice (sweet)"
         },
         2: {
-            breakfast: "Rice soup with ghee and ginger, slices of Banana ,lemon juice, fresh coriander juice",
-            lunch: "rice, cabbage, sweet potato, orange, urad Dal, buttermilk, cashews, coconut, ",
-            dinner: "Quinoa,fish, cucumber, plum,tur dal ,fiberts, olives, carrot juice "
+            Breakfast: "Rice soup with ghee and ginger, slices of Banana ,lemon juice, fresh coriander juice",
+            Lunch: "rice, cabbage, sweet potato, orange, urad Dal, buttermilk, cashews, coconut, ",
+            Dinner: "Quinoa,fish, cucumber, plum,tur dal ,fiberts, olives, carrot juice "
         },
         3: {
-            breakfast: "Hot cereals with soaked oatsand ghee, Apricots with cardamom, Banana , juice with kale, lime and cardamom",
-            lunch: "rice, cabbage, sweet potato, orange, urad Dal, buttermilk, cashews, coconut, ",
-            dinner: "wheat flour dosa or chapati ,Leafy greens , avocado, cow milk,Beans,saffron with milk"
+            Breakfast: "Hot cereals with soaked oatsand ghee, Apricots with cardamom, Banana , juice with kale, lime and cardamom",
+            Lunch: "rice, cabbage, sweet potato, orange, urad Dal, buttermilk, cashews, coconut, ",
+            Dinner: "wheat flour dosa or chapati ,Leafy greens , avocado, cow milk,Beans,saffron with milk"
         },
         4: {
-            breakfast: "mashed sweet potato rice  + Ginger+ pepper,mango lassi, warm water with pepper and jeera",
-            lunch: "wheat, carrots, cherries, mung Dal, buttermilk, walnuts, peanut apple juice honey ",
-            dinner: "seitan,corn,grapes,ghee,mango juice, cumine,fish,ice cream "
+            Breakfast: "mashed sweet potato rice  + Ginger+ pepper,mango lassi, warm water with pepper and jeera",
+            Lunch: "wheat, carrots, cherries, mung Dal, buttermilk, walnuts, peanut apple juice honey ",
+            Dinner: "seitan,corn,grapes,ghee,mango juice, cumine,fish,ice cream "
         },
         5: {
-            breakfast: "paneer burji, sweet dessert of wheat and dry fruits",
-            lunch: "rice, cucumber, banana, buttermilk, walnuts, chai, ginger, basil, sugarcane juice ",
-            dinner: "Durham flour chapati, radish, plum,olives, mung beans,apples,pine nuts,apple juice, "
+            Breakfast: "paneer burji, sweet dessert of wheat and dry fruits",
+            Lunch: "rice, cucumber, banana, buttermilk, walnuts, chai, ginger, basil, sugarcane juice ",
+            Dinner: "Durham flour chapati, radish, plum,olives, mung beans,apples,pine nuts,apple juice, "
         },
         6: {
-            breakfast: "Pasta +ghee, cereals with ginger and lime",
-            lunch: "pasta oats, sweet potato, apples, strawberry, tur Dal, buttermilk, almonds cashews, apple juice grape juice,garlic,ginger,honey jaggery",
-            dinner: "Rice ,cucumber, bananas, Beans,ghee,fish,carrots, Jaggery, kulfi or ice cream "
+            Breakfast: "Pasta +ghee, cereals with ginger and lime",
+            Lunch: "pasta oats, sweet potato, apples, strawberry, tur Dal, buttermilk, almonds cashews, apple juice grape juice,garlic,ginger,honey jaggery",
+            Dinner: "Rice ,cucumber, bananas, Beans,ghee,fish,carrots, Jaggery, kulfi or ice cream "
         }
     },
     pith: {
         0: {
-            breakfast: "Cereal, Almond milk, Herbal tea, water melon, Apple, brocolli",
-            lunch: "rice(basmati) ,barley ,cauliflower ,wheat, yoghurt ,ghee",
-            dinner: "Rice, wheat, asparagus, Alives,peas, lemon juice"
+            Breakfast: "Cereal, Almond milk, Herbal tea, water melon, Apple, brocolli",
+            Lunch: "rice(basmati) ,barley ,cauliflower ,wheat, yoghurt ,ghee",
+            Dinner: "Rice, wheat, asparagus, Alives,peas, lemon juice"
 
         },
         1: {
-            breakfast: "Oats + maple syrup, Apple juice/ Herbal tea, strawberries , blueberries, cabbage",
-            lunch: "cabbage, cucumber , rice,green beans, peas, pumpkin ",
-            dinner: "Cabbage, spinach, potatoes, rice, cucumber "
+            Breakfast: "Oats + maple syrup, Apple juice/ Herbal tea, strawberries , blueberries, cabbage",
+            Lunch: "cabbage, cucumber , rice,green beans, peas, pumpkin ",
+            Dinner: "Cabbage, spinach, potatoes, rice, cucumber "
         },
         2: {
-            breakfast: "Pancakes + Honey, Goat milk/ herbal tea, melons, grapes, cucumber",
-            lunch: "tur dal ,urad dal,rice,soy beans , yoghurt ",
-            dinner: "apples,potatoes,rice,spinach,lemon juice,cherries,goat milk"
+            Breakfast: "Pancakes + Honey, Goat milk/ herbal tea, melons, grapes, cucumber",
+            Lunch: "tur dal ,urad dal,rice,soy beans , yoghurt ",
+            Dinner: "apples,potatoes,rice,spinach,lemon juice,cherries,goat milk"
         },
         3: {
-            breakfast: "Pasta + brocolli, Grape juice / herbal tea, pomegranates, berries, corn",
-            lunch: "mixed green vegetables rice, yoghurt, cucumber ",
-            dinner: "cool dairy drinks,goat milk,mango juice ,lemon grass,rice,asparagus"
+            Breakfast: "Pasta + brocolli, Grape juice / herbal tea, pomegranates, berries, corn",
+            Lunch: "mixed green vegetables rice, yoghurt, cucumber ",
+            Dinner: "cool dairy drinks,goat milk,mango juice ,lemon grass,rice,asparagus"
         },
         4: {
-            breakfast: "oats bran + honey, Barley tea, Avocado, sweet potato",
-            lunch: "grain teas, kidney beans,rice, yoghurt, cucumber ,",
-            dinner: "Fresh fruit juices, fresh basil leaves, goat milk, olive oil, rice, fresh water fish"
+            Breakfast: "oats bran + honey, Barley tea, Avocado, sweet potato",
+            Lunch: "grain teas, kidney beans,rice, yoghurt, cucumber ,",
+            Dinner: "Fresh fruit juices, fresh basil leaves, goat milk, olive oil, rice, fresh water fish"
         },
         5: {
-            breakfast: "Tapioca + spices ( pepper etc;), coconut milk, Apricots , sprouts",
-            lunch: " wheat ,paneer, rice, ,yoghurt ",
-            dinner: "Ghee, almonds, coconut, fresh cool dairy products, cows milk, cherries, spinach, cherries "
+            Breakfast: "Tapioca + spices ( pepper etc;), coconut milk, Apricots , sprouts",
+            Lunch: " wheat ,paneer, rice, ,yoghurt ",
+            Dinner: "Ghee, almonds, coconut, fresh cool dairy products, cows milk, cherries, spinach, cherries "
         },
         6: {
-            breakfast: "Quinoa + spices, milk/ Herbal tea, cabbage , chiken, brocolli, berries , Apple",
-            lunch: "chicken,rice,egg whites , fresh water fish",
-            dinner: "Asparagus, ghee, goat cheese, peas, potatoes, cucumber, watermelon, rice, spinach, asparagus "
+            Breakfast: "Quinoa + spices, milk/ Herbal tea, cabbage , chiken, brocolli, berries , Apple",
+            Lunch: "chicken,rice,egg whites , fresh water fish",
+            Dinner: "Asparagus, ghee, goat cheese, peas, potatoes, cucumber, watermelon, rice, spinach, asparagus "
         }
     }
 
@@ -352,6 +352,7 @@ var app = new Vue({
   el: "#app",
   data: {
     quiz: quiz,
+    foodData: foodData,
     doshaMode: true,  
     questionIndex: 0,
     userResponses: userResponseSkelaton,
