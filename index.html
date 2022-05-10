@@ -54,9 +54,13 @@
 						</div>
 
 						<!-- <div v-else class="option" > </div> -->
-						<div v-if="!doshaMode" class="option" v-for="(foodTime,index) in foodData.kafh[dateObj.getDay()]" :key="index" >
+						<!-- <div v-if="!doshaMode && (this.doshaIs != "NA")" class="option" v-for="(foodTime,index) in foodData[{{this.doshaIs}}][dateObj.getDay()]" :key="index">
 							<strong>{{index}}</strong> <br>
 							 {{ foodTime }}
+						</div> -->
+						<div v-if="!doshaMode" class="option" v-for="(foodTime,index) in foodData.kafh[dateObj.getDay()]" :key="index">
+							<strong>{{index}}</strong> <br>
+							 {{ foodTime }} 
 						</div>
 					</div>
 
@@ -78,7 +82,7 @@
 							<!-- next button -->
 							<a v-if="doshaMode" class="button"
 								:class="(userResponses[questionIndex]==null)?'':'is-active'" v-on:click="next();"
-								:disabled="questionIndex>=quiz.questions.length || doshaMode">
+								:disabled="questionIndex>=quiz.questions.length">
 								{{ 'Next' }}
 							</a>
 

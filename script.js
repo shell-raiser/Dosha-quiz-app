@@ -345,7 +345,7 @@ var foodData = {
 
 }
 
-
+var doshaIs = "NA";
 userResponseSkelaton = Array(quiz.questions.length).fill(null);
 
 var app = new Vue({
@@ -353,7 +353,8 @@ var app = new Vue({
   data: {
     quiz: quiz,
     foodData: foodData,
-    doshaMode: true,  
+    doshaMode: true,
+    
     questionIndex: 0,
     userResponses: userResponseSkelaton,
     isActive: false,
@@ -377,8 +378,7 @@ var app = new Vue({
     // },
     dietMode: function(){
       this.doshaMode = false;
-      console.log("diet button pressed");
-      console.log(this.doshaMode);  
+
     },
     selectOption: function (index) {
       Vue.set(this.userResponses, this.questionIndex, index);
@@ -450,41 +450,51 @@ var app = new Vue({
       console.log(this.kafh)
       if (this.vath >= this.kafh && this.vath >= this.pith && this.vath > 80) {
         this.result = "You belong to Dwandwaja Vata";
+        this.doshaIs = "Vata";
         // console.log("1st if inside");
       }
       else if (this.pith >= this.vath && this.pith >= this.kafh && this.pith > 80) {
         this.result = "You belong to Dwandwaja Pitta";
+        this.doshaIs = "Pitta";
       }
       else if (this.kafh >= this.vath && this.kafh >= this.pith && this.kafh > 80) {
         this.result = "You belong to Dwandwaja Kapha";
+        this.doshaIs = "Kapha";
       }
       else if (this.vath > 31 && this.pith > 31 && this.kafh > 31) {
         this.result = "You belong to Ekadoshaja Prakruti (Tri-Dosha)";
+        this.doshaIs = "Tri";
       }
       else if (this.vath + this.pith > 70 && this.vath, this.pith > 30 && this.vath, this.pith > this.kafh) {
         if (this.vath > this.pith){
           this.result = "You belong to Dwidoshaja Vata-Pitta";
+          this.doshaIs = "Vata";
         }
         else{
           this.result = "You belong to Dwidoshaja Pitta-Vata";
+          this.doshaIs = "Pitta";
         }
         
       }
       else if (this.kafh + this.pith > 70 && this.kafh, this.pith > 30 && this.kafh, this.pith > this.vath) {
         if (this.pith > this.kafh){
           this.result = "You belong to Dwidoshaja Pitta-Kapha";
+          this.doshaIs = "Pitta";
         }
         else{
           this.result = "You belong to Dwidoshaja Kapha-Pitta";
+          this.doshaIs = "Kapha";
         }
         
       }
       else if (this.vath + this.kafh > 70 && this.vath, this.kafh > 30 && this.vath, this.kafh > this.pith) {
         if (this.kafh > this.vath){
           this.result = "You belong to Dwidoshaja Kapha-Vata";
+          this.doshaIs = "Kapha";
         }
         else{
           this.result = "You belong to Dwidoshaja Vata-Kapha";
+          this.doshaIs = "Vata";
         }
         
       }
