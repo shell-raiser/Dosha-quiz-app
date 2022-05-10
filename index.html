@@ -42,7 +42,7 @@
 
 					<!-- questionTitle -->
 					<h2 v-if="doshaMode" class="titleContainer title">{{ quiz.questions[questionIndex].text }}</h2>
-					<h2 v-else class="titleContainer title"> Diet</h2>
+					<!-- <h2 v-else class="titleContainer title"> Diet</h2> -->
 
 					<!-- quizOptions -->
 					<div class="optionContainer">
@@ -54,10 +54,9 @@
 						</div>
 
 						<!-- <div v-else class="option" > </div> -->
-						<div v-else class="option" >
-							{{foodData.kafh[dateObj.getDay()].breakfast}}
-							{{foodData.kafh[dateObj.getDay()].lunch}}
-							{{foodData.kafh[dateObj.getDay()].dinner}}
+						<div v-if="!doshaMode" class="option" v-for="(foodTime,index) in foodData.kafh[dateObj.getDay()]" :key="index" >
+							<strong>{{index}}</strong> <br>
+							 {{ foodTime }}
 						</div>
 					</div>
 
