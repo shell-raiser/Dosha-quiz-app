@@ -46,9 +46,8 @@
 
 					<!-- quizOptions -->
 					<div class="optionContainer">
-						<div v-for="(response, index) in quiz.questions[questionIndex].responses" v-if="doshaMode" class="option"
-							
-							@click="selectOption(index)"
+						<div v-for="(response, index) in quiz.questions[questionIndex].responses" v-if="doshaMode"
+							class="option" @click="selectOption(index)"
 							:class="{ 'is-selected': userResponses[questionIndex] == index}" :key="index">
 							{{ index | charIndex }}. {{ response.text }}
 						</div>
@@ -68,19 +67,81 @@
 							<button v-if="!doshaMode" class="button" v-on:click="Kapha= true;">
 								Kapha
 							</button>
-						</div >
+							<button v-if="!doshaMode" class="button" v-on:click="VathaPitta= true;">
+								Vata-Pitta
+							</button>
+							<button v-if="!doshaMode" class="button" v-on:click="PittaVatha= true;">
+								Pitta-Vata
+							</button>
+							<button v-if="!doshaMode" class="button" v-on:click="VathaKapha= true;">
+								Vata Kapha
+							</button>
+							<button v-if="!doshaMode" class="button" v-on:click="KaphaVatha= true;">
+								Kapha Vata
+							</button>
+							<button v-if="!doshaMode" class="button" v-on:click="PittaKapha= true;">
+								Pitta Kapha
+							</button>
+							<button v-if="!doshaMode" class="button" v-on:click="KaphaPitta= true;">
+								Kapha Pitta
+							</button>
+							<button v-if="!doshaMode" class="button" v-on:click="Tri= true;">
+								Tri-Dosha
+							</button>
+							
+						</div>
 
-						<div v-if="Kapha" class="option" v-for="(foodTime,index) in foodData.kafh[dateObj.getDay()]" :key="index">
+						<div v-if="Kapha" class="option" v-for="(foodTime,index) in foodData.kafh[dateObj.getDay()]"
+							:key="index">
 							<strong>{{index}}</strong> <br>
-							 {{ foodTime }} 
+							{{ foodTime }}
 						</div>
-						<div v-if="Vatha" class="option" v-for="(foodTime,index) in foodData.vath[dateObj.getDay()]" :key="index">
+						<div v-if="Vatha" class="option" v-for="(foodTime,index) in foodData.vath[dateObj.getDay()]"
+							:key="index">
 							<strong>{{index}}</strong> <br>
-							 {{ foodTime }} 
+							{{ foodTime }}
 						</div>
-						<div v-if="Pitta" class="option" v-for="(foodTime,index) in foodData.pith[dateObj.getDay()]" :key="index">
+						<div v-if="Pitta" class="option" v-for="(foodTime,index) in foodData.pith[dateObj.getDay()]"
+							:key="index">
 							<strong>{{index}}</strong> <br>
-							 {{ foodTime }} 
+							{{ foodTime }}
+						</div>
+
+						<div v-if="VathaPitta" class="option" v-for="(foodTime,index) in foodData.kafh[dateObj.getDay()]"
+							:key="index">
+							<strong>{{index}}</strong> <br>
+							{{ foodTime }}
+						</div>
+						<div v-if="PittaVatha" class="option" v-for="(foodTime,index) in foodData.vath[dateObj.getDay()]"
+							:key="index">
+							<strong>{{index}}</strong> <br>
+							{{ foodTime }}
+						</div>
+						<div v-if="VathaKapha" class="option" v-for="(foodTime,index) in foodData.pith[dateObj.getDay()]"
+							:key="index">
+							<strong>{{index}}</strong> <br>
+							{{ foodTime }}
+						</div>
+
+						<div v-if="KaphaVatha" class="option" v-for="(foodTime,index) in foodData.kafh[dateObj.getDay()]"
+							:key="index">
+							<strong>{{index}}</strong> <br>
+							{{ foodTime }}
+						</div>
+						<div v-if="PittaKapha" class="option" v-for="(foodTime,index) in foodData.vath[dateObj.getDay()]"
+							:key="index">
+							<strong>{{index}}</strong> <br>
+							{{ foodTime }}
+						</div>
+						<div v-if="KaphaPitta" class="option" v-for="(foodTime,index) in foodData.pith[dateObj.getDay()]"
+							:key="index">
+							<strong>{{index}}</strong> <br>
+							{{ foodTime }}
+						</div>
+						<div v-if="Tri" class="option" v-for="(foodTime,index) in foodData.pith[dateObj.getDay()]"
+							:key="index">
+							<strong>{{index}}</strong> <br>
+							{{ foodTime }}
 						</div>
 					</div>
 
@@ -97,7 +158,8 @@
 								Back
 							</a>
 
-							<a v-if="doshaMode && questionIndex == 0" class="button" v-on:click="dietMode();">See Diet</a>
+							<a v-if="doshaMode && questionIndex == 0" class="button" v-on:click="dietMode();">See
+								Diet</a>
 
 							<!-- next button -->
 							<a v-if="doshaMode" class="button"
