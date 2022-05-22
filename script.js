@@ -479,41 +479,41 @@ var foodData = {
       Dinner: "Durham flour chapathi,radish,plum,apple juice,olives,mung beans,apples,pine nuts,Pinto beans,Thur dal,Broccoli, Mushrooms"
     }
   },
-  vathPith: {
+  kafhVath: {
     0: {
-      Breakfast: "",
-      Lunch: "",
-      Dinner: ""
+      Breakfast: "Red clove tea,egg whites,apple juice.,Cereals with ginger and lime",
+      Lunch: "Rice,chicken,fish,barley,meat,garlic,ginger,almonds cashews,apple juice,grape juice,honey",
+      Dinner: "Durham flour in small quantity,bitter gourd,beans,leafy greens,ghee,fish,carrots,jaggery,kulfi,or ice cream."
     },
     1: {
-      Breakfast: "",
-      Lunch: "",
-      Dinner: ""
+      Breakfast: "Barley tea,oats,banana,pistachio nuts,(in small quantities),Milk with cinnamon and Almond powder",
+      Lunch: "Barley, rice,leafy green vegetables.,Rice,carrots,green beans,ghee,ginger",
+      Dinner: "Lentiles,onion,mushroom,cooked tomatoes,leafy greens,garlic,apple juice,beans,Durham flor chapathi,carrots,cherries"
     },
     2: {
-      Breakfast: "",
-      Lunch: "",
-      Dinner: ""
+      Breakfast: "Cinnamon tea,millet,carrot,cherries,Apple,grape fruits, honey and ginger",
+      Lunch: "millet,rice,cauliflower,garlic,green bean,kiwi,rice cakes,wheat,cucumber,sprouts,apricots,buttermilk",
+      Dinner: "Legumes,prickly pear,spinach,garlic,Buttermilk,Rice,turnip,strawberries,mung dhal,orange juice"
     },
     3: {
-      Breakfast: "",
-      Lunch: "",
-      Dinner: ""
+      Breakfast: "Ginger tea,pasta,tomato,guava,pine nuts,Lemon juice,(in small quantities), Fresh coriander juice,Slices of banana",
+      Lunch: "Rice,barley,wheat,fish,chicken,cashews,orange,Rice,cabbage,sweet potato,urad-dal,buttermilk,",
+      Dinner: "Mung beans,Ghee,goat milk, fresh paneer,beans.,Quinoa,fish,cucumber,plum,tur-dal,fibers,olives,carrot juice."
     },
     4: {
-      Breakfast: "",
-      Lunch: "",
-      Dinner: ""
+      Breakfast: "Lemon tea,green beans,Sprouts,grapes.,Banana juice with kale,lime and cardamom,Apricots with cardamom",
+      Lunch: "Rye rice,green beans,onion,spinach,chicken,walnuts,banana,buttermilk,sugarcane juice,ginger,basil.",
+      Dinner: "Chicken,Egg white,ginger,leafy greens,saffron with milk,wheat flour dosa or chapathi,leafy greens,avocado."
     },
     5: {
-      Breakfast: "",
-      Lunch: "",
-      Dinner: ""
+      Breakfast: "Clove tea,pomegranate juice,almonds(soaked and peeled),mango lassi,Mashed sweet potato rice with ginger and pepper",
+      Lunch: "Rice,bean sprouts,leafy greens,walnuts, apple juice,Wheat,carrots,cherries,mung dal,buttermilk",
+      Dinner: "Fish,Onions,Coriander,Peas,fish,ice cream,grapes,ghee,mango juice,cumine"
     },
     6: {
-      Breakfast: "",
-      Lunch: "",
-      Dinner: ""
+      Breakfast: "Lemon grass tea,Paneer burji,yoghurt(diluted with 2 parts of water).Sweet dessert of wheat and dry fruits",
+      Lunch: "Rice,barley,leafy greens,bean sprouts,duck,buttermilk,cabbage,sweet potato,urad Dal,coconut water",
+      Dinner: "Pinto beans,Thur dal,Broccoli, Mushrooms,olives,mung beans,apples,pine nuts,apple juice.Durham flour chapathi"
     }
   },
   vathPith: {
