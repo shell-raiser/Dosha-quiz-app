@@ -57,7 +57,8 @@
 							<strong>{{index}}</strong> <br>
 							 {{ foodTime }}
 						</div> -->
-						<div v-if="!doshaMode && !Vatha && !Pitta && !Kapha">
+						<div
+							v-if="!doshaMode && !Vatha && !Pitta && !Kapha && !KaphaPitta && !VathaPitta && !PittaVatha && !VathaKapha && !KaphaVatha && !PittaKapha && !Tri">
 							<button v-if="!doshaMode" class="button" v-on:click="Vatha= true;">
 								Vata
 							</button>
@@ -88,9 +89,13 @@
 							<button v-if="!doshaMode" class="button" v-on:click="Tri= true;">
 								Tri-Dosha
 							</button>
-							
-						</div>
 
+						</div>
+						<div v-if="Vatha || Pitta || Kapha || KaphaPitta || VathaPitta || PittaVatha || VathaKapha || KaphaVatha || PittaKapha || Tri"
+							class="option">
+							<p style="text-align: center;font-weight: bold;">Today's Oil</p>
+							<p style="text-align: center;">{{ foodData.Oil[dateObj.getDay()] }}</p>
+						</div>
 						<div v-if="Kapha" class="option" v-for="(foodTime,index) in foodData.kafh[dateObj.getDay()]"
 							:key="index">
 							<strong>{{index}}</strong> <br>
@@ -107,42 +112,44 @@
 							{{ foodTime }}
 						</div>
 
-						<div v-if="VathaPitta" class="option" v-for="(foodTime,index) in foodData.kafh[dateObj.getDay()]"
-							:key="index">
+						<div v-if="VathaPitta" class="option"
+							v-for="(foodTime,index) in foodData.vathPith[dateObj.getDay()]" :key="index">
 							<strong>{{index}}</strong> <br>
 							{{ foodTime }}
 						</div>
-						<div v-if="PittaVatha" class="option" v-for="(foodTime,index) in foodData.vath[dateObj.getDay()]"
-							:key="index">
+						<div v-if="PittaVatha" class="option"
+							v-for="(foodTime,index) in foodData.pithVath[dateObj.getDay()]" :key="index">
 							<strong>{{index}}</strong> <br>
 							{{ foodTime }}
 						</div>
-						<div v-if="VathaKapha" class="option" v-for="(foodTime,index) in foodData.pith[dateObj.getDay()]"
+						<div v-if="VathaKapha" class="option"
+							v-for="(foodTime,index) in foodData.vathKafh[dateObj.getDay()]" :key="index">
+							<strong>{{index}}</strong> <br>
+							{{ foodTime }}
+						</div>
+
+						<div v-if="KaphaVatha" class="option"
+							v-for="(foodTime,index) in foodData.kafhVath[dateObj.getDay()]" :key="index">
+							<strong>{{index}}</strong> <br>
+							{{ foodTime }}
+						</div>
+						<div v-if="PittaKapha" class="option"
+							v-for="(foodTime,index) in foodData.pithKafh[dateObj.getDay()]" :key="index">
+							<strong>{{index}}</strong> <br>
+							{{ foodTime }}
+						</div>
+						<div v-if="KaphaPitta" class="option"
+							v-for="(foodTime,index) in foodData.kafhPith[dateObj.getDay()]" :key="index">
+							<strong>{{index}}</strong> <br>
+							{{ foodTime }}
+						</div>
+						<div v-if="Tri" class="option" v-for="(foodTime,index) in foodData.tri[dateObj.getDay()]"
 							:key="index">
 							<strong>{{index}}</strong> <br>
 							{{ foodTime }}
 						</div>
 
-						<div v-if="KaphaVatha" class="option" v-for="(foodTime,index) in foodData.kafh[dateObj.getDay()]"
-							:key="index">
-							<strong>{{index}}</strong> <br>
-							{{ foodTime }}
-						</div>
-						<div v-if="PittaKapha" class="option" v-for="(foodTime,index) in foodData.vath[dateObj.getDay()]"
-							:key="index">
-							<strong>{{index}}</strong> <br>
-							{{ foodTime }}
-						</div>
-						<div v-if="KaphaPitta" class="option" v-for="(foodTime,index) in foodData.pith[dateObj.getDay()]"
-							:key="index">
-							<strong>{{index}}</strong> <br>
-							{{ foodTime }}
-						</div>
-						<div v-if="Tri" class="option" v-for="(foodTime,index) in foodData.pith[dateObj.getDay()]"
-							:key="index">
-							<strong>{{index}}</strong> <br>
-							{{ foodTime }}
-						</div>
+
 					</div>
 
 
@@ -194,7 +201,7 @@
 						{{ probStats }}
 					</p>
 					<br>
-					<a class="button" @click="dietMode()">See diet <i class="fa fa-refresh"></i></a>
+					<a class="button" v-on:click="dietMode();">See diet </a>
 					<!--/resultTitleBlock-->
 
 				</div>
