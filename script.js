@@ -597,8 +597,7 @@ var foodData = {
       Dinner: "Rice,cucumber,bananas,beans,bitter gourd,ghee,fish,carrots,jaggery,kulfi or ice cream,wheat,asparagus,olives,peas,lemon juice,Durham flour in small quantity,leafy greens."
     },
     1: {
-      Breakfast: "Rice or wheat Kichidi,oats,banana,Milk with cinnamon and Almond powder
-      watermelon,apple,brocolli,Barley tea,pistachio nuts (in small quantities).",
+      Breakfast: "Rice or wheat Kichidi,oats,banana,Milk with cinnamon and Almond powder,watermelon,apple,brocolli,Barley tea,pistachio nuts (in small quantities).",
       Lunch: "Rice,carrots,green beans,ghee,ginger,rice(basmati),barley,cauliflower,wheat,yoghurt,Barley, rice,leafy green vegetables.",
       Dinner: "Durham flor chapathi,carrots,cherries,beans,apple juice,jaggery,cabbage,onion,spinach,potatoes,rice,cucumber,Lentiles,cooked tomatoes,garlic,leafy greens."
     },
