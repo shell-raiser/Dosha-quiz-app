@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 # build_dist.py
 # A script to concat all the files to a single HTML file. This was taken from a stack overflow post
 
