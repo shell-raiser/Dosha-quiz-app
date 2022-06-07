@@ -25,7 +25,7 @@
 				leave-active-class="animated zoomOut" mode="out-in">
 
 				<!--qusetionContainer-->
-				<div class="questionContainer" v-if="questionIndex<quiz.questions.length" v-bind:key="questionIndex">
+				<div class="questionContainer" v-if="(questionIndex<quiz.questions.length) || !doshaMode" v-bind:key="questionIndex">
 
 					<header>
 						<h1 v-if="doshaMode" class="title is-6">Dosha Quiz</h1>
@@ -59,15 +59,19 @@
 						</div> -->
 						<div
 							v-if="!doshaMode && !Vatha && !Pitta && !Kapha && !KaphaPitta && !VathaPitta && !PittaVatha && !VathaKapha && !KaphaVatha && !PittaKapha && !Tri">
+
 							<button v-if="!doshaMode" class="button" v-on:click="Vatha= true;">
 								Vata
 							</button>
+
 							<button v-if="!doshaMode" class="button" v-on:click="Pitta= true;">
 								Pitta
 							</button>
+
 							<button v-if="!doshaMode" class="button" v-on:click="Kapha= true;">
 								Kapha
 							</button>
+
 							<button v-if="!doshaMode" class="button" v-on:click="VathaPitta= true;">
 								Vata-Pitta
 							</button>
@@ -185,7 +189,7 @@
 				<!--/questionContainer-->
 
 				<!--quizCompletedResult-->
-				<div v-if="questionIndex >= quiz.questions.length" v-bind:key="questionIndex"
+				<div v-if="(questionIndex >= quiz.questions.length) && doshaMode" v-bind:key="questionIndex"
 					class="quizCompleted has-text-centered">
 
 					<!-- quizCompletedIcon: Achievement Icon -->
@@ -201,7 +205,11 @@
 						{{ probStats }}
 					</p>
 					<br>
-					<a class="button" v-on:click="dietMode();">See diet </a>
+					<!-- <a v-if="doshaMode && questionIndex == 0" class="button" v-on:click="dietMode();">See Diet
+					</a> -->
+					<!-- <a class="button" v-on:click="dietMode();">See diet </a> -->
+					<a class="button" v-on:click="dietMode();">See Diet
+					</a>
 					<!--/resultTitleBlock-->
 
 				</div>

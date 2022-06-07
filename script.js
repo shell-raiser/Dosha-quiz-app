@@ -718,7 +718,8 @@ var app = new Vue({
     // },
     dietMode: function () {
       this.doshaMode = false;
-
+      this.questionIndex = 0;
+      console.log("See diet pressed");
     },
 
     selectOption: function (index) {
@@ -783,9 +784,9 @@ var app = new Vue({
         }
       }
 
-      this.vath = ((this.vath / this.quiz.questions.length) * 100);
-      this.pith = ((this.pith / this.quiz.questions.length) * 100);
-      this.kafh = ((this.kafh / this.quiz.questions.length) * 100);
+      this.vath = ((this.vath / this.quiz.questions.length) * 100).toFixed(2);
+      this.pith = ((this.pith / this.quiz.questions.length) * 100).toFixed(2);
+      this.kafh = ((this.kafh / this.quiz.questions.length) * 100).toFixed(2);
       console.log(this.vath)
       console.log(this.pith)
       console.log(this.kafh)
