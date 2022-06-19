@@ -35,7 +35,7 @@ body {
   margin: 0 0.5rem;
   align-self: center;
   /* align-content: center; */
-  /* max-width: 80%; */
+  max-width: 100%;
   max-height: max-content;
 
 }
@@ -142,9 +142,9 @@ body {
 }
 
 .questionBox .questionContainer .optionContainer .option {
-  border-radius: 0.9rem;
+  border-radius: 1.5rem;
   padding: 9px 18px;
-  margin: 0 18px;
+  margin: 0 8px;
   margin-bottom: 12px;
   transition: 0.3s;
   cursor: pointer;
