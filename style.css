@@ -35,7 +35,7 @@ body {
   margin: 0 0.5rem;
   align-self: center;
   /* align-content: center; */
-  max-width: 80%;
+  /* max-width: 80%; */
   max-height: max-content;
 
 }
@@ -67,7 +67,7 @@ body {
 }
 
 .questionBox header .progressContainer {
-  width: 60%;
+  /* width: 60%; */
   margin: 0 auto;
 }
 
