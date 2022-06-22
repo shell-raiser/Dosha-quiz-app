@@ -4,6 +4,7 @@
 from bs4 import BeautifulSoup
 from pathlib import Path
 import base64
+import re
 
 original_html_text = Path('index.html').read_text(encoding="utf-8")
 soup = BeautifulSoup(original_html_text)
@@ -11,29 +12,42 @@ soup = BeautifulSoup(original_html_text)
 # Find link tags. example: <link rel="stylesheet" href="css/somestyle.css">
 for tag in soup.find_all('link', href=True):
     if tag.has_attr('href'):
-        file_text = Path(tag['href']).read_text(encoding="utf-8")
+        #print(str(tag))
+        if re.match(r'^<link href="https', str(tag)):
+            # file_text = str(tag)
+            # new_style = soup.new_tag('link')
+            # soup.html.head.append("<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css'>")
+            print("Skipped CDN href:", str(tag))
 
-        # remove the tag from soup
-        tag.extract()
 
-        # insert style element
-        new_style = soup.new_tag('style')
-        new_style.string = file_text
-        soup.html.head.append(new_style)
+        else:
+            file_text = Path(tag['href']).read_text(encoding="utf-8")
+
+            # remove the tag from soup
+            tag.extract()
+
+            # insert style element
+            new_style = soup.new_tag('style')
+            new_style.string = file_text
+            soup.html.head.append(new_style)
 
 
 # Find script tags. example: <script src="js/somescript.js"></script>
 for tag in soup.find_all('script', src=True):
     if tag.has_attr('src'):
-        file_text = Path(tag['src']).read_text()
+        if re.match(r'^<script src="https', str(tag)):
+            # soup.html.body.append('<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>')
+            print("Skipped CDN src:", str(tag))
+        else:
+            file_text = Path(tag['src']).read_text()
 
-        # remove the tag from soup
-        tag.extract()
+            # remove the tag from soup
+            tag.extract()
 
-        # insert script element
-        new_script = soup.new_tag('script')
-        new_script.string = file_text
-        soup.html.body.append(new_script)
+            # insert script element
+            new_script = soup.new_tag('script')
+            new_script.string = file_text
+            soup.html.body.append(new_script)
 
 # Find image tags.
 for tag in soup.find_all('img', src=True):
