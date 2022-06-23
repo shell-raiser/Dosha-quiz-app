@@ -523,9 +523,9 @@ var foodData = {
       Dinner: "Rice, wheat, asparagus, olives, peas, lemon juice. Durham flour in small quantity, leafy greens, bitter gourd, beans."
     },
     1: {
-      Breakfast: "Cereal almond milk,herbal tea,watermelon,apple,brocolli,Barley tea,oats,banana,pistachio nuts(in small quantities)",
-      Lunch: "rice(basmati),barley,cauliflower,wheat,yoghurt,ghee,leafy green vegetables,Barley, rice.",
-      Dinner: "cabbage,spinach,potatoes,rice,cucumber,Lentiles,onion,mushroom,cooked tomatoes,leafy greens,garlic"
+      Breakfast: "Cereal almond milk, herbal tea, watermelon, apple, brocolli, Barley tea, oats, banana, pistachio nuts(in small quantities)",
+      Lunch: "rice(basmati), barley, cauliflower, wheat, yoghurt, ghee, leafy green vegetables, Barley, rice.",
+      Dinner: "cabbage, spinach, potatoes, rice, cucumber, Lentiles, onion, mushroom, cooked tomatoes, leafy greens, garlic"
     },
     2: {
       Breakfast: "Oats and maple syrup,apple juice/herbal tea,strawberries,blueberries,cabbage.,Cinnamon tea,millet,carrot,cherries",
