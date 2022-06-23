@@ -555,9 +555,9 @@ var foodData = {
   },
   kafhPith: {
     0: {
-      Breakfast: "Red clove tea,egg whites,apple juice,cabbage,chicken,brocolli,berries,milk/herbal tea,Quinoa and spices.",
-      Lunch: "Rice,chicken,fish,barley,meat.chicken,rice,egg whites,fresh water fish.",
-      Dinner: "Durham flour in small quantity,leafy greens,bitter gourd,beans,lemon juice,asparagus,olives,Rice,wheat,peas."
+      Breakfast: "Red clove tea, egg whites, apple juice, cabbage, chicken, brocolli, berries, milk/herbal tea, Quinoa and spices.",
+      Lunch: "Rice, chicken, fish, barley, meat. chicken, rice, egg whites, fresh water fish.",
+      Dinner: "Durham flour in small quantity, leafy greens, bitter gourd, beans, lemon juice, asparagus, olives, Rice, wheat, peas."
     },
     1: {
       Breakfast: "Barley tea,oats,banana,watermelon,apple,pistachio nuts (in small quantities).Cereal almond milk,herbal tea,brocolli.",
@@ -594,7 +594,7 @@ var foodData = {
     0: {
       Breakfast: "Cereals with ginger and lime, Red clove tea, cabbage, chicken, brocolli, berries, apple juice, egg whites, apple fruit.",
       Lunch: "Strawberry, tur dal, buttermilk, barley, meat., Pasta oats, sweet potato ,apples, jaggery, egg whites, fresh water fish. Rice, chicken.",
-      Dinner: "Rice,cucumber, bananas, beans,bitter gourd, ghee, fish, carrots, jaggery, kulfi or ice cream, wheat, asparagus, olives, peas, lemon juice, Durham flour in small quantity, leafy greens."
+      Dinner: "Rice, cucumber, bananas, beans,bitter gourd, ghee, fish, carrots, jaggery, kulfi or ice cream, wheat, asparagus, olives, peas, lemon juice, Durham flour in small quantity, leafy greens."
     },
     1: {
       Breakfast: "Rice or wheat Kichidi, oats, banana, Milk with cinnamon and Almond powder, watermelon, apple, brocolli, Barley tea, pistachio nuts (in small quantities).",
