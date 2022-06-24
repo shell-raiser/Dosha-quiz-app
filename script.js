@@ -560,34 +560,34 @@ var foodData = {
       Dinner: "Durham flour in small quantity, leafy greens, bitter gourd, beans, lemon juice, asparagus, olives, Rice, wheat, peas."
     },
     1: {
-      Breakfast: "Barley tea,oats,banana,watermelon,apple,pistachio nuts (in small quantities).Cereal almond milk,herbal tea,brocolli.",
-      Lunch: "Barley, rice,leafy green vegetables,ghee,rice(basmati),barley,cauliflower,wheat,yoghurt.",
-      Dinner: "Lentiles,onion,mushroom,cooked tomatoes,leafy greens,garlic,rice,cucumber,cabbage,spinach,potatoes"
+      Breakfast: "Barley tea, oats, banana, watermelon, apple, pistachio nuts (in small quantities). Cereal almond milk, herbal tea, brocolli.",
+      Lunch: "Barley, rice, leafy green vegetables, ghee, rice(basmati), barley, cauliflower, wheat, yoghurt.",
+      Dinner: "Lentiles, onion, mushroom, cooked tomatoes, leafy greens, garlic, rice, cucumber, cabbage, spinach, potatoes"
     },
     2: {
-      Breakfast: "Cinnamon tea,millet,carrot,cherries,cabbage,Oats and maple syrup,apple juice/herbal tea,strawberries,blueberries.",
-      Lunch: "millet,rice,cauliflower,garlic,green bean,peas,cabbage,cucumber,rice,green beans,pumpkin.",
-      Dinner: "Legumes,prickly pear,spinach,garlic,cherries,apples,potatoes,rice,spinach,lemon juice"
+      Breakfast: "Cinnamon tea, millet, carrot, cherries, cabbage, Oats and maple syrup, apple juice/herbal tea, strawberries, blueberries.",
+      Lunch: "millet, rice, cauliflower, garlic, green bean, peas, cabbage, cucumber, rice, green beans, pumpkin.",
+      Dinner: "Legumes, prickly pear, spinach, garlic, cherries, apples, potatoes, rice, spinach, lemon juice"
     },
     3: {
-      Breakfast: "Ginger tea,pasta,tomato,guava,cucumber,pine nuts(in small quantities),melons,grapes,Pancakes and honey,goat milk/herbal tea.",
-      Lunch: "Rice,barley,wheat,fish,chicken,tur dal,urad dal,rice,soyabeans,yoghurt",
-      Dinner: "Mung beans,Ghee,goat milk, fresh paneer,beans.cool dairy drinks,goat milk,mango juice,asparagus,lemon grass,rice."
+      Breakfast: "Ginger tea, pasta, tomato, guava, cucumber, pine nuts(in small quantities), melons, grapes, Pancakes and honey, goat milk/herbal tea.",
+      Lunch: "Rice, barley, wheat, fish, chicken, tur dal, urad dal, rice, soyabeans, yoghurt",
+      Dinner: "Mung beans, Ghee, goat milk, fresh paneerpaneer, beans. cool dairy drinks, goat milk, mango juice, asparagus, lemon grass, rice."
     },
     4: {
-      Breakfast: "Lemon tea,green beans,Sprouts,grapes.,Pasta and brocolli,grape juice/herbal tea, berries,corn,pomegranates.",
-      Lunch: "Rye rice,green beans,onion,spinach,chicken,mixed green vegetables,rice,yoghurt,cucumber",
-      Dinner: "Chicken,Egg white,ginger,leafy greens, fresh water fish,Fresh fruit juice,fresh basil leaves,goat milk,rice."
+      Breakfast: "Lemon tea, green beans, Sprouts, grapes., Pasta and brocolli, grape juice/herbal tea, berries, corn, pomegranates.",
+      Lunch: "Rye rice, green beans, onion, spinach, chicken, mixed green vegetables, rice, yoghurt, cucumber",
+      Dinner: "Chicken, Egg white, ginger, leafy greens, fresh water fish, Fresh fruit juice, fresh basil leaves, goat milk, rice."
     },
     5: {
-      Breakfast: "Clove tea,pomegranate juice,almonds(soaked and peeled),oats bran and honey,barley tea, avocado sweet potato",
-      Lunch: "Rice,bean sprouts,leafy greens.grain tea,kidney beans rice,yoghurt,cucumber",
-      Dinner: "Fish,Onions,Coriander,Peas,cow milk,cherries,spinach,Ghee,almonds,coconut,fresh cool dairy products."
+      Breakfast: "Clove tea, pomegranate juice, almonds(soaked and peeled), oats bran and honey, barley tea, avocado sweet potato",
+      Lunch: "Rice, bean sprouts, leafy greens. grain tea, kidney beans rice, yoghurt, cucumber",
+      Dinner: "Fish, Onions, Coriander, Peas, cow milk, cherries, spinach, Ghee, almonds, coconut, fresh cool dairy products."
     },
     6: {
-      Breakfast: "Lemon grass tea, yoghurt(diluted with 2 parts of water).,Tapioca and spices(pepper),coconut milk,apricots,sprouts.",
-      Lunch: "Rice,barley,leafy greens,bean sprouts,duck,wheat,paneer,rice,yoghurt.",
-      Dinner: "Pinto beans,Thur dal,Broccoli, Mushrooms,spinach,Asparagus,ghee,goat cheese,peas,potatoes,rice,cucumber,watermelon."
+      Breakfast: "Lemon grass tea, yoghurt(diluted with 2 parts of water)., Tapioca and spices(pepper), coconut milk,apricots,sprouts.",
+      Lunch: "Rice, barley, leafy greens, bean sprouts, duck, wheat, paneer, rice, yoghurt.",
+      Dinner: "Pinto beans, Thur dal, Broccoli, Mushrooms, spinach, Asparagus, ghee, goat cheese, peas, potatoes, rice, cucumber, watermelon."
     }
   },
   tri: {
