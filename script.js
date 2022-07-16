@@ -256,6 +256,7 @@ var quiz = {
 let dateObj = new Date();
 var foodData = {
   kafh: {
+    oil: ["cold or wood pressed Seseme oil"],
     0: {
       Breakfast: "Barley tea, oats,  Banana,pistachio nuts( in small quantities)",
       Lunch: "barley, rice, leafy green vegetables,",
@@ -293,6 +294,11 @@ var foodData = {
     }
   },
   vath: {
+    oil: ["cold or wood pressed SunFlower oil",
+      "cold or wood pressed  Ground Nut oil",
+      "cold or wood pressed coconut oil",
+      'Ghee/Clarified Butter',
+      "cold or wood pressed olive oil"],
     0: {
       Breakfast: " Rice Or wheat kichidi, soup of green gram, Milk with Cinnamon and Almond powder",
       Lunch: "rice ,carrots, green beans, coconut, ghee, ginger ",
@@ -331,6 +337,12 @@ var foodData = {
     }
   },
   pith: {
+    oil: ["cold or wood pressed Mustard oil",
+      "cold or wood pressed SunFlower oil",
+      "Ghee/Clarified Butter",
+      "cold or wood pressed coconut oil",
+      "cold or wood pressed olive oil"],
+
     0: {
       Breakfast: "Cereal, Almond milk, Herbal tea, water melon, Apple, brocolli",
       Lunch: "rice(basmati), barley, cauliflower, wheat, yoghurt, ghee",
@@ -369,6 +381,13 @@ var foodData = {
     }
   },
   vathPith: {
+    oil: ["cold or wood pressed SunFlower oil",
+      "cold or wood pressed  Ground Nut oil",
+      "cold or wood pressed coconut oil",
+      "Ghee/Clarified Butter",
+      "cold or wood pressed Mustard oil",
+      "cold or wood pressed olive oil"],
+
     0: {
       Breakfast: "Cereals with ginger and lime, cabbage,apple,brocolli,berries, Quinoa with spices, milk/herbal tea",
       Lunch: "Pasta oats,sweet potato, apples, strawberry, tur dal, buttermilk.,grape juice, garlic, ginger, honey, chicken, rice, egg whites,",
@@ -406,6 +425,13 @@ var foodData = {
     }
   },
   pithVath: {
+    oil: ["cold or wood pressed Mustard oil",
+      "Ghee/Clarified Butter",
+      "cold or wood pressed SunFlower oil",
+      "cold or wood pressed  Ground Nut oil",
+      "cold or wood pressed coconut oil",
+      "cold or wood pressed olive oil"],
+
     0: {
       Breakfast: "cabbage, chicken, brocolli, berries, apple, Quinoa and spices, milk/herbal tea, Cereals with ginger and lime",
       Lunch: "chicken, rice, egg whites, fresh water fish, strawberry, tur dal, buttermilk, almonds cashews, apple juice, jaggery,honey",
@@ -443,6 +469,13 @@ var foodData = {
     }
   },
   vathKafh: {
+    oil: ["cold or wood pressed Seseme oil",
+      "Ghee/Clarified Butter",
+      "cold or wood pressed SunFlower oil",
+      "cold or wood pressed  Ground Nut oil",
+      "cold or wood pressed coconut oil",
+      "cold or wood pressed olive oil"],
+
     0: {
       Breakfast: "Cereals with ginger and lime, Red clove tea, egg whites, pineapple juice.",
       Lunch: "Almonds cashews, apple juice, grape juice, garlic, ginger, honey, jaggery, Rice, chicken, fish, barley, meat.",
@@ -480,6 +513,12 @@ var foodData = {
     }
   },
   kafhVath: {
+    oil: ["cold or wood pressed Seseme oil",
+      "cold or wood pressed SunFlower oil",
+      "Ghee/Clarified Butter",
+      "cold or wood pressed olive oil",
+      "cold or wood pressed  Ground Nut oil"],
+
     0: {
       Breakfast: "Red clove tea,egg whites,apple juice., Cereals with ginger and lime",
       Lunch: "Rice,chicken, fish, barley, meat, garlic, ginger, almonds cashews, apple juice, grape juice, honey",
@@ -517,6 +556,13 @@ var foodData = {
     }
   },
   pithKafh: {
+    oil: ["cold or wood pressed Seseme oil",
+      "cold or wood pressed Mustard oil",
+      "Ghee/Clarified Butter",
+      "cold or wood pressed coconut oil",
+      "cold or wood pressed SunFlower oil",
+      "cold or wood pressed olive oil"],
+
     0: {
       Breakfast: "Quinoa and spices, milk/herbal tea, apple, cabbage, chicken, brocolli, berries, Red clove tea, egg whites, apple juice.",
       Lunch: "chicken, rice, egg whites, fresh water fish, Rice,chicken, fish, barley, meat.",
@@ -554,6 +600,12 @@ var foodData = {
     }
   },
   kafhPith: {
+    oil: ["cold or wood pressed Seseme oil",
+      "cold or wood pressed Mustard oil",
+      "Ghee/Clarified Butter",
+      "cold or wood pressed  Ground Nut oil",
+      "cold or wood pressed olive oil"],
+
     0: {
       Breakfast: "Red clove tea, egg whites, apple juice, cabbage, chicken, brocolli, berries, milk/herbal tea, Quinoa and spices.",
       Lunch: "Rice, chicken, fish, barley, meat. chicken, rice, egg whites, fresh water fish.",
@@ -591,6 +643,14 @@ var foodData = {
     }
   },
   tri: {
+    oil: ["cold or wood pressed SunFlower oil",
+      "cold or wood pressed Seseme oil",
+      "cold or wood pressed Mustard oil",
+      "Ghee/Clarified Butter",
+      "cold or wood pressed olive oil",
+      "cold or wood pressed  Ground Nut oil",
+      "cold or wood pressed coconut oil"],
+
     0: {
       Breakfast: "Cereals with ginger and lime, Red clove tea, cabbage, chicken, brocolli, berries, apple juice, egg whites, apple fruit.",
       Lunch: "Strawberry, tur dal, buttermilk, barley, meat., Pasta oats, sweet potato ,apples, jaggery, egg whites, fresh water fish. Rice, chicken.",
@@ -811,7 +871,7 @@ var app = new Vue({
         this.doshaIs = 4;
         this.Tri = true;
       }
-      else if (((this.vath+this.pith)>70) && (this.vath > 30) && (this.pith > 30) && (this.vath > this.kafh) && (this.pith > this.kafh)) {
+      else if (((this.vath + this.pith) > 70) && (this.vath > 30) && (this.pith > 30) && (this.vath > this.kafh) && (this.pith > this.kafh)) {
         console.log("Inside vath pith condition");
         if (this.vath > this.pith) {
           this.result = "You belong to Dwidoshaja Vata-Pitta";
