@@ -258,40 +258,40 @@ var foodData = {
   kafh: {
     oil: ["cold or wood pressed Seseme oil"],
     0: {
-      Breakfast: "Barley tea, oats,  Banana,pistachio nuts( in small quantities)",
-      Lunch: "barley, rice, leafy green vegetables,",
-      Dinner: "Durham flour in small quantity, leafy greens,bitter gourd,beans"
+      Breakfast: "Red clove tea, egg whites, apple juice.",
+      Lunch: "Rice, chicken, fish, barley, cumin.",
+      Dinner: "Durham flour in small quantity, leafy greens, bitter gourd, beans"
     },
     1: {
-      Breakfast: "Cinnamon tea, millet,  carrot, cherris",
-      Lunch: "millet, rice, cauliflower ,garlic, green beans, ",
-      Dinner: "Lentiles, onion, mushroom, cooked tomatoes, leafy greens, garlic, oils"
+      Breakfast: "Barley tea, oats, watermelon, pistachio nuts (in small quantities)",
+      Lunch: "Barley, rice, leafy green vegetables.",
+      Dinner: "Lentiles, onion, mushroom, cooked tomatoes, leafy greens, garlic"
     },
     2: {
-      Breakfast: "Ginger tea, Pasta, Tamato, Guava, Pine nuts( in small quantities) ",
-      Lunch: "rice, barley, wheat, fish, chicken ",
-      Dinner: "Legumes, prickly pear, spinach, garlic."
+      Breakfast: "Cinnamon tea, millet, carrot, cherries",
+      Lunch: "millet, rice, cauliflower, garlic, green bean",
+      Dinner: "Legumes, prickly pear, spinach, garlic, cabbage."
     },
     3: {
-      Breakfast: "Lemon tea, green beans, Sprouts, Grapes",
-      Lunch: "rye, rice, green beans, onion, spinach,   ,chicken ,",
-      Dinner: "Mung beans, Ghee,goat milk, fresh paneer,beans."
+      Breakfast: "Ginger tea, pasta, tomato, guava, pine nuts(in small quantities)",
+      Lunch: "Rice, barley, wheat, fish, chicken, sugarcane juice",
+      Dinner: "Mung beans, Ghee, goat milk, fresh paneer, beans."
     },
     4: {
-      Breakfast: "Clove tea, pomegranate juice, Alomnds(soaked+ peeled)",
-      Lunch: "rice, bean sprouts, leafy greens,",
+      Breakfast: "Lemon tea, green beans, Sprouts boiled, grapes.",
+      Lunch: "Rye rice, green beans, onion, spinach, chicken",
       Dinner: "Chicken, Egg white, ginger, leafy greens."
     },
     5: {
-      Breakfast: "Lemon grass tea, yogurt(diluted with 2parts of water) ",
-      Lunch: "rice, barley, leafy greens, bean sprouts , duck, ",
-      Dinner: "Fish, Onions, Coriander,Peas"
+      Breakfast: "Clove tea, pomegranate juice, almonds(soaked and peeled)",
+      Lunch: "Rice,bean sprouts boiled, leafy greens.",
+      Dinner: "Fish, Onions, Coriander, Peas, bottle gourd, rice "
     },
     6: {
-      Breakfast: "Red clove tea, egg whites, pineapple juice ",
-      Lunch: "rice, chicken, fish, barley, meat",
-      Dinner: "Pinto beans, Thur dal, Broccoli, Mushrooms"
-    }
+      Breakfast: "Lemon grass tea, mung dal yoghurt(diluted with 2 parts of water).",
+      Lunch: "Rice,barley, leafy greens, bean, sprouts boiled, duck",
+      Dinner: "Pinto beans, Thur dal, ridge gourd, Mushrooms"
+    },
   },
   vath: {
     oil: ["cold or wood pressed SunFlower oil",
@@ -300,40 +300,39 @@ var foodData = {
       'Ghee/Clarified Butter',
       "cold or wood pressed olive oil"],
     0: {
-      Breakfast: " Rice Or wheat kichidi, soup of green gram, Milk with Cinnamon and Almond powder",
-      Lunch: "rice ,carrots, green beans, coconut, ghee, ginger ",
-      Dinner: "Durham flour chapati, carrots, cherries, Beans, apple juice, Jaggery "
-
+      Breakfast: "Cereals with ginger and Honey.",
+      Lunch: "Pasta oats, sweet potato, apples, strawberry, tur dal, buttermilk, lmonds, cashews, apple juice, garlic, ginger, honey, jaggery.",
+      Dinner: "Rice, cucumber, bananas, beans, ghee, fish, carrots, jaggery, kulfi, or ice cream."
     },
     1: {
-      Breakfast: "Green and fresh herb frittata, lemon, orange juice, Apple, grape fruits with honey and ginger",
-      Lunch: "rice cakes, wheat, cucumber, sprouts, apricots, kiwi, buttermilk ",
-      Dinner: "Rice, Turnip, strawberries, mung dhal, Buttermilk, soyasauce,orrange juice (sweet)"
+      Breakfast: "Rice or wheat Kichidi, Soup of Green gram with Jaggery and coconut, Milk with cinnamon and Almond powder",
+      Lunch: "Rice,carrots, green beans, ghee,ginger",
+      Dinner: "Durham flor chapathi, carrots, cherries, beans, apple juice, jaggery."
     },
     2: {
-      Breakfast: "Rice soup with ghee and ginger, slices of Banana, lemon juice, fresh coriander juice",
-      Lunch: "rice, cabbage, sweet potato, orange, urad Dal, buttermilk, cashews, coconut",
-      Dinner: "Quinoa, fish, cucumber, plum,tur dal, fiberts, olives, carrot juice "
+      Breakfast: "Green and fresh herb frittat, orange juice, Apple, grape fruits, honey and ginger",
+      Lunch: "rice cakes, wheat, cucumber, sprouts boiled, apricots, kiwi, buttermilk",
+      Dinner: "Rice, turnip, strawberries, orange juice, Buttermilk, soyasauce."
     },
     3: {
-      Breakfast: "Hot cereals with soaked oatsand ghee, Apricots with cardamom, Banana , juice with kale, lime and cardamom",
-      Lunch: "rice, cabbage, sweet potato, orange, urad Dal, buttermilk, cashews, coconut, ",
-      Dinner: "wheat flour dosa or chapati ,Leafy greens , avocado, cow milk,Beans,saffron with milk"
+      Breakfast: "Rice soup with ghee and ginger, Slices of banana, Fresh coriander juice",
+      Lunch: "Rice, turnip, sweet potato, urad-dal, orange, buttermilk, cashews,coconut.",
+      Dinner: "Quinoa, fish, cucumber, plum, tur-dal, Rice, olives, carrot juice."
     },
     4: {
-      Breakfast: "mashed sweet potato rice  + Ginger+ pepper,mango lassi, warm water with pepper and jeera",
-      Lunch: "wheat, carrots, cherries, mung Dal, buttermilk, walnuts, peanut apple juice honey ",
-      Dinner: "seitan,corn,grapes,ghee,mango juice, cumine, fish, ice cream "
+      Breakfast: "Hot cereals with soaked oatsand ghee, Apricots with cardamom, Banana juice,lime and cardamom",
+      Lunch: "Rice,cucumber, banana,buttermilk, walnuts, ginger, basil, Apple juice.",
+      Dinner: "wheat flour dosa or chapathi, leafy greens, avocado, cow milk, beans, saffron with milk"
     },
     5: {
-      Breakfast: "paneer burji, sweet dessert of wheat and dry fruits",
-      Lunch: "rice, cucumber, banana, buttermilk, walnuts, chai, ginger, basil, sugarcane juice ",
-      Dinner: "Durham flour chapati, radish, plum,olives, mung beans,apples, pine nuts, apple juice, "
+      Breakfast: "Mashed sweet potato rice with ginger and pepper, mango lassi, warm water with pepper and jeera",
+      Lunch: "Wheat, carrots, cherries, tur-dal,buttermilk, walnuts, peanut, apple juice, honey",
+      Dinner: "seitan, corn, grapes, ghee, mango juice, cumine, goat meet, ice cream"
     },
     6: {
-      Breakfast: "Pasta +ghee, cereals with ginger and lime",
-      Lunch: "pasta oats, sweet potato, apples, strawberry, tur Dal, buttermilk, almonds cashews, apple juice grape juice, garlic, ginger, honey jaggery",
-      Dinner: "Rice, cucumber, bananas, Beans, ghee, fish, carrots, Jaggery, kulfi or ice cream "
+      Breakfast: "Paneer burji, Sweet dessert of wheat and dry fruits",
+      Lunch: "Rice, ridge gourd,sweet potato, urad Dal, orange, buttermilk, cashews, coconut water",
+      Dinner: "Durham flour chapathi, radish boiled, plum, olives, black gram beans, apples, pine nuts, apple juice."
     }
   },
   pith: {
