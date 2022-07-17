@@ -343,40 +343,39 @@ var foodData = {
       "cold or wood pressed olive oil"],
 
     0: {
-      Breakfast: "Cereal, Almond milk, Herbal tea, water melon, Apple, brocolli",
-      Lunch: "rice(basmati), barley, cauliflower, wheat, yoghurt, ghee",
-      Dinner: "Rice, wheat, asparagus, Alives, peas, lemon juice"
-
+      Breakfast: "Quinoa and spices, milk/herbal tea, chicken,brocolli,berries,apple.",
+      Lunch: "chicken,rice,egg whites,freshwater fish.",
+      Dinner: "Rice,wheat,asparagus,olives,peas, sariva juice."
     },
     1: {
-      Breakfast: "Oats + maple syrup, Apple juice/ Herbal tea, strawberries, blueberries, cabbage",
-      Lunch: "cabbage, cucumber, rice, green beans, peas, pumpkin ",
-      Dinner: "Cabbage, spinach, potatoes, rice, cucumber"
-    },
+      Breakfast: "Cereal almond milk,herbal tea,  watermelon, apple, brocolli.", 
+      Lunch: "rice(basmati), barley, cauliflower, wheat,  yoghurt, ghee.", 
+      Dinner: "corn, spinach, potatoes, rice, cucumber"
+    }, 
     2: {
-      Breakfast: "Pancakes + Honey, Goat milk/ herbal tea, melons, grapes, cucumber",
-      Lunch: "tur dal, urad dal, rice, soy beans, yoghurt",
-      Dinner: "apples, potatoes, rice, spinach, lemon juice, cherries, goat milk"
-    },
+      Breakfast: "Oats and maple syrup, apple juice/herbal tea,  strawberries, blueberries, bottle gaurd.", 
+      Lunch: "snake gourd, cucumber, rice, green beans,  peas, pumpkin.", 
+      Dinner: "apples, potatoes, rice, spinach, sariva juice,  cherries, goat milk."
+    }, 
     3: {
-      Breakfast: "Pasta + brocolli, Grape juice / herbal tea, pomegranates, berries, corn",
-      Lunch: "mixed green vegetables rice, yoghurt, cucumber ",
-      Dinner: "cool dairy drinks, goat milk, mango juice, lemon grass, rice, asparagus"
-    },
+      Breakfast: "Pancakes and honey, goat milk/herbal tea,  melons, grapes, cucumber.", 
+      Lunch: "turdal, urad dal, rice, soyabeans, yoghurt", 
+      Dinner: "cool dairy drinks, goat milk, grape juice,  lemon grass, rice, asparagus."
+    }, 
     4: {
-      Breakfast: "oats bran + honey, Barley tea, Avocado, sweet potato",
-      Lunch: "grain teas, kidney beans,rice, yoghurt, cucumber ,",
-      Dinner: "Fresh fruit juices, fresh basil leaves, goat milk, olive oil, rice, fresh water fish"
-    },
+      Breakfast: "Pasta and brocolli, grape juice/herbal tea,  pomegranates,  berries,  corn", 
+      Lunch: "mixed green vegetables, rice, yoghurt, cucumber", 
+      Dinner: "Fresh fruit juice, fresh basil leaves, goat milk,  rice,  fresh water fish."
+    }, 
     5: {
-      Breakfast: "Tapioca + spices ( pepper etc;), coconut milk, Apricots , sprouts",
-      Lunch: " wheat ,paneer, rice, yoghurt ",
-      Dinner: "Ghee, almonds, coconut, fresh cool dairy products, cows milk, cherries, spinach, cherries "
-    },
+      Breakfast: "oats bran and honey, barley tea,  avocado, sweet potato", 
+      Lunch: "grain tea, kidney beans rice, yoghurt, cucumber", 
+      Dinner: "Ghee, almonds, coconut, fresh cool dairy products,  cow milk, cherries, spinach"
+    }, 
     6: {
-      Breakfast: "Quinoa + spices, milk/ Herbal tea, cabbage , chiken, brocolli, berries , Apple",
-      Lunch: "chicken,rice,egg whites , fresh water fish",
-      Dinner: "Asparagus, ghee, goat cheese, peas, potatoes, cucumber, watermelon, rice, spinach, asparagus "
+      Breakfast: "Tapioca and spices(pepper), coconut milk,  apricots, sprouts boiled.", 
+      Lunch: "wheat, paneer, rice, yoghurt.", 
+      Dinner: "Asparagus, ghee, goat cheese, peas, potatoes,  cucumber, watermelon, rice, spinach"
     }
   },
   vathPith: {
