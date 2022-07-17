@@ -99,11 +99,11 @@
 
 						<!-- <div v-if="Vatha || Pitta || Kapha || KaphaPitta || VathaPitta || PittaVatha || VathaKapha || KaphaVatha || PittaKapha || Tri"
 							class="option">
-							<p style="text-align: center;font-weight: bold;">Today's Oil</p>
+							<p style="text-align: center;font-weight: bold;">This Month's Oil</p>
 							<p style="text-align: center;">{{ foodData.Oil[dateObj.getDay()] }}</p>
 						</div> -->
 						<div v-if="Kapha" class="option">
-							<strong>Today's Oil</strong><br>
+							<strong>This Month's Oil</strong><br>
 							{{ foodData.kafh.oil[(dateObj.getMonth())%(foodData.kafh.oil.length)] }}
 						</div>
 						<div v-if="Kapha" class="option" v-for="(foodTime,index) in foodData.kafh[dateObj.getDay()]"
@@ -113,7 +113,7 @@
 						</div>
 
 						<div v-if="Vatha" class="option">
-							<strong>Today's Oil</strong><br>
+							<strong>This Month's Oil</strong><br>
 							{{ foodData.vath.oil[(dateObj.getMonth())%(foodData.vath.oil.length)] }}
 						</div>
 						<div v-if="Vatha" class="option" v-for="(foodTime,index) in foodData.vath[dateObj.getDay()]"
@@ -123,7 +123,7 @@
 						</div>
 
 						<div v-if="Pitta" class="option">
-							<strong>Today's Oil</strong><br>
+							<strong>This Month's Oil</strong><br>
 							{{ foodData.pith.oil[(dateObj.getMonth())%(foodData.pith.oil.length)] }}
 						</div>
 						<div v-if="Pitta" class="option" v-for="(foodTime,index) in foodData.pith[dateObj.getDay()]"
@@ -134,7 +134,7 @@
 
 
 						<div v-if="VathaPitta" class="option">
-							<strong>Today's Oil</strong><br>
+							<strong>This Month's Oil</strong><br>
 							{{ foodData.vathPith.oil[(dateObj.getMonth())%(foodData.vathPith.oil.length)] }}
 						</div>
 						<div v-if="VathaPitta" class="option"
@@ -145,7 +145,7 @@
 
 
 						<div v-if="PittaVatha" class="option">
-							<strong>Today's Oil</strong>
+							<strong>This Month's Oil</strong>
 							{{ foodData.pithVath.oil[(dateObj.getMonth())%(foodData.pithVath.oil.length)] }}
 						</div>
 						<div v-if="PittaVatha" class="option"
@@ -156,7 +156,7 @@
 
 
 						<div v-if="VathaKapha" class="option">
-							<strong>Today's Oil</strong><br>
+							<strong>This Month's Oil</strong><br>
 							{{ foodData.vathKafh.oil[(dateObj.getMonth())%(foodData.vathKafh.oil.length)] }}
 						</div>
 						<div v-if="VathaKapha" class="option"
@@ -167,7 +167,7 @@
 
 
 						<div v-if="KaphaVatha" class="option">
-							<strong>Today's Oil</strong><br>
+							<strong>This Month's Oil</strong><br>
 							{{ foodData.kafhVath.oil[(dateObj.getMonth())%(foodData.kafhVath.oil.length)] }}
 						</div>
 						<div v-if="KaphaVatha" class="option"
@@ -178,7 +178,7 @@
 
 
 						<div v-if="PittaKapha" class="option">
-							<strong>Today's Oil</strong><br>
+							<strong>This Month's Oil</strong><br>
 							{{ foodData.pithKafh.oil[(dateObj.getMonth())%(foodData.pithKafh.oil.length)] }}
 						</div>
 						<div v-if="PittaKapha" class="option"
@@ -190,7 +190,7 @@
 
 
 						<div v-if="KaphaPitta" class="option">
-							<strong>Today's Oil</strong><br>
+							<strong>This Month's Oil</strong><br>
 							{{ foodData.kafhPith.oil[(dateObj.getMonth())%(foodData.kafhPith.oil.length)] }}
 						</div>
 						<div v-if="KaphaPitta" class="option"
@@ -201,7 +201,7 @@
 
 
 						<div v-if="Tri" class="option">
-							<strong>Today's Oil</strong>
+							<strong>This Month's Oil</strong>
 							{{ foodData.tri.oil[(dateObj.getMonth())%(foodData.tri.oil.length)] }}
 						</div>
 						<div v-if="Tri" class="option" v-for="(foodTime,index) in foodData.tri[dateObj.getDay()]"
