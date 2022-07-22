@@ -643,47 +643,47 @@ var foodData = {
   },
   tri: {
     oil: ["cold or wood pressed SunFlower oil",
-      "cold or wood pressed Seseme oil",
-      "cold or wood pressed Mustard oil",
-      "Ghee/Clarified Butter",
-      "cold or wood pressed olive oil",
-      "cold or wood pressed  Ground Nut oil",
-      "cold or wood pressed coconut oil"],
+    "cold or wood pressed Seseme oil",
+    "cold or wood pressed Mustard oil",
+    "Ghee/Clarified Butter",
+    "cold or wood pressed olive oil",
+    "cold or wood pressed  Ground Nut oil",
+    "cold or wood pressed coconut oil"],
 
     0: {
-      Breakfast: "Cereals with ginger and lime, Red clove tea, cabbage, chicken, brocolli, berries, apple juice, egg whites, apple fruit.",
-      Lunch: "Strawberry, tur dal, buttermilk, barley, meat., Pasta oats, sweet potato ,apples, jaggery, egg whites, fresh water fish. Rice, chicken.",
-      Dinner: "Rice, cucumber, bananas, beans,bitter gourd, ghee, fish, carrots, jaggery, kulfi or ice cream, wheat, asparagus, olives, peas, lemon juice, Durham flour in small quantity, leafy greens."
+      Breakfast: "Rice or wheat Kichidi,oats,banana, Milk with cinnamon and Almond powder watermelon,apple,brocolli,Barley tea ,pistachio nuts (in small quantities).",
+      Lunch: "Rice,carrots,green beans,ghee,ginger rice(basmati),barley,cauliflower,wheat yoghurt,Barley, rice,leafy green vegetables.",
+      Dinner: "Durham flor chapathi,carrots,cherries, beans,apple juice,jaggery,cabbage,onion ,spinach,potatoes,rice,cucumber,Lentiles, cooked tomatoes,garlic,leafy greens."
     },
     1: {
-      Breakfast: "Rice or wheat Kichidi, oats, banana, Milk with cinnamon and Almond powder, watermelon, apple, brocolli, Barley tea, pistachio nuts (in small quantities).",
-      Lunch: "Rice, carrots, green beans, ghee, ginger, rice(basmati), barley, cauliflower, wheat, yoghurt, Barley, rice, leafy green vegetables.",
-      Dinner: "Durham flor chapathi, carrots, cherries, beans, apple juice, jaggery, cabbage, onion, spinach, potatoes, rice, cucumber, Lentiles, cooked tomatoes, garlic, leafy greens."
+      Breakfast: "Oats and maple syrup,apple juice/herbal tea sariva juice, orange juice,millet,Apple,grape fruits honey and ginger,carrot,blueberries,cherries strawberries,cabbage.",
+      Lunch: "rice cakes,wheat,cucumber,sprouts boiled,garlic apricots,kiwi,buttermilk,peas,pumpkin, cabbage,green beans,millet,rice,cauliflower.",
+      Dinner: "Rice,turnip,strawberries,mung dhal, Buttermilk,soyasauce,orange juice,prickly pear, apples,potatoes,spinach,lemon juice,cherries, goat milk,Legumes,garlic."
     },
     2: {
-      Breakfast: "Oats and maple syrup, apple juice/herbal tea, lemon juice, orange juice, millet, Apple, grape fruits, honey and ginger, carrot, blueberries, cherries, strawberries, cabbage.",
-      Lunch: "rice cakes, wheat, cucumber, sprouts, garlic, apricots, kiwi, buttermilk, peas, pumpkin, cabbage, green beans, millet, rice, cauliflower.",
-      Dinner: "Rice, turnip, strawberries, mung dhal, Buttermilk, soyasauce, orange juice, prickly pear, apples, potatoes, spinach, lemon juice, cherries, goat milk, Legumes, garlic."
+      Breakfast: "Rice soup with ghee and ginger,cucumber,guava, Slices of banana,Fresh coriander juice,grapes,pasta, Pancakes with honey,goat milk/herbal tea,melons ,tomato,pine nuts(in small quantities)",
+      Lunch: "Rice,cabbage,sweet potato,urad-dal,barley, orange,buttermilk,cashews,coconut,fish,chicken turdal,soyabeans,yoghurt,wheat.",
+      Dinner: "Quinoa,fish,cucumber,plum,tur-dal,lemon grass fibers,olives,carrot juice,Ghee,Mung beans,rice cool dairy drinks,mango juice,goat milk, fresh paneer, ,asparagus."
     },
     3: {
-      Breakfast: "Rice soup with ghee and ginger, cucumber, guava, Slices of banana, Fresh coriander juice,grapes, pasta, Pancakes with honey, goat milk/herbal tea, melons, tomato, pine nuts(in small quantities)",
-      Lunch: "Rice, cabbage, sweet potato, urad-dal, barley, orange, buttermilk, cashews, coconut, fish, chicken, turdal, soyabeans, yoghurt, wheat.",
-      Dinner: "Quinoa, fish, cucumber, plum, tur-dal, lemon grass, fibers, olives, carrot juice, Ghee, Mung beans, rice, cool dairy drinks, mango juice, goat milk, fresh paneer, asparagus."
+      Breakfast: "Hot cereals with soaked oatsand ghee,berries, corn, Apricots with cardamom,pomegranates,Sprouts boiled, Banana juice,Lemon tea,green beans, Pasta and brocolli,grape juice/herbal tea.",
+      Lunch: "Rice,cucumber,watermelon,buttermilk,spinach,chicken walnuts,ginger,basil,sugarcane juice,onion,green beans Rye rice,mixed green vegetables,yoghurt,cucumber.",
+      Dinner: "wheat flour dosa or chapathi,leafy greens,ginger. avocado,cow milk,beans,saffron with milk Fresh fruit juice,fresh basil leaves,goat milk, rice, fresh water fish,Chicken,Egg white."
     },
     4: {
-      Breakfast: "Hot cereals with soaked oatsand ghee, berries, corn, Apricots with cardamom, pomegranates, Sprouts, Banana juice with kale, Lemon tea, green beans, Pasta and brocolli, grape juice/herbal tea.",
-      Lunch: "Rice,cucumber, banana, buttermilk, spinach, chicken, walnuts, ginger, basil, sugarcane juice, onion, green beans, Rye rice, mixed green vegetables, yoghurt, cucumber.",
-      Dinner: "wheat flour dosa or chapathi, leafy greens, ginger, avocado, cow milk, beans, saffron with milk, Fresh fruit juice, fresh basil leaves, goat milk, rice, fresh water fish, Chicken, Egg white."
+      Breakfast: "Mashed sweet potato rice with ginger and pepper,mango lassi warm water with pepper and jeera,avocado,Clove tea, oats bran and honey,barley tea,pomegranate juice, almonds(soaked and peeled)",
+      Lunch: "Wheat,carrots,cherries,mung dal,buttermilk,leafy greens. walnuts,peanut, apple juice, honey,bean sprouts boiled,Rice, grain tea,kidney beans rice,yoghurt,cucumber",
+      Dinner: "seitan,corn,grapes,ghee,mango juice,cumine fish,ice cream,Ghee,almonds,coconut,fresh cool dairy products cow milk,cherries,spinach,Coriander,Peas,Fish,Onions."
     },
     5: {
-      Breakfast: "Mashed sweet potato rice with ginger and pepper, mango lassi, warm water with pepper and jeera, avocado, Clove tea, oats bran and honey, barley tea, pomegranate juice, almonds(soaked and peeled)",
-      Lunch: "Wheat, carrots, cherries, mung dal, buttermilk, leafy greens, walnuts, peanut, apple juice, honey, bean sprouts, Rice, grain tea, kidney beans rice, yoghurt, cucumber",
-      Dinner: "seitan, corn, grapes, ghee, mango juice, cumine, fish, ice cream, Ghee, almonds, coconut,fresh cool dairy products, cow milk, cherries, spinach, Coriander, Peas, Fish, Onions."
+      Breakfast: "Paneer burji,Sweet dessert of wheat and dry fruits Tapioca and spices(pepper),coconut milk,apricots, sprouts boiled,Lemon grass tea, yoghurt(diluted with 2 parts of water).",
+      Lunch: "Rice,cabbage,sweet potato,urad Dal,leafy greens, orange,buttermilk,cashews,coconut water,barley, wheat,paneer,rice,yoghurt,bean sprouts boiled,duck",
+      Dinner: "Durham flour chapathi,radish boiled,plum,apple juice,Thur dal, olives,mung beans,apples,pine nuts,Bottle gourd, peas Asparagus,ghee,goat cheese,potatoes,Pinto beans cucumber,watermelon,rice,spinach,Mushrooms"
     },
     6: {
-      Breakfast: "Paneer burji, Sweet dessert of wheat and dry fruits, Tapioca and spices(pepper), coconut milk, apricots, sprouts, Lemon grass tea, yoghurt(diluted with 2 parts of water).",
-      Lunch: "Rice, cabbage, sweet potato, urad Dal, leafy greens, orange, buttermilk, cashews, coconut water, barley, wheat, paneer, rice, yoghurt, bean sprouts, duck",
-      Dinner: "Durham flour chapathi, radish, plum, apple juice, Thur dal, olives, mung beans, apples, pine nuts, Broccoli, peas, Asparagus, ghee, goat cheese, potatoes, Pinto beans, cucumber, watermelon, rice, spinach, Mushrooms"
+      Breakfast: "Cereals with ginger and lime,Red clove tea cabbage,chicken,brocolli,berries,apple juice ,egg whites,apple fruit.",
+      Lunch: "Strawberry,tur dal,buttermilk,barley,goat meat.Pasta oats,sweet potato,apples,jaggery egg whites,fresh water fish.Rice,chicken.",
+      Dinner: "Rice,cucumber,bananas,beans,bitter gourd, ghee,fish,carrots,jaggery,kulfi or ice cream, wheat,asparagus,olives,peas,sariva juice, Durham flour in small quantity,leafy greens."
     }
   },
   Oil: {
