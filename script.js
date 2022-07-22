@@ -378,7 +378,9 @@ var foodData = {
       Dinner: "Asparagus, ghee, goat cheese, peas, potatoes,  cucumber, watermelon, rice, spinach"
     }
   },
+
   vathPith: {
+
     oil: ["cold or wood pressed SunFlower oil",
       "cold or wood pressed  Ground Nut oil",
       "cold or wood pressed coconut oil",
@@ -387,41 +389,42 @@ var foodData = {
       "cold or wood pressed olive oil"],
 
     0: {
-      Breakfast: "Cereals with ginger and lime, Ridge gourd,apple,brocolli,berries, Quinoa with spices, milk/herbal tea",
-      Lunch: "Pasta oats,sweet potato,apples, strawberry,tur dal,buttermilk., grape juice,garlic,ginger,honey, chicken,rice,egg whites,",
-      Dinner: "Rice,cucumber,bananas,beans,, ghee,fish,carrots,jaggery,kulfi,or ice cream., Rice,wheat,asparagus,olives,peas,lemon juice."
-    },
-    1: {
-      Breakfast: "Rice or wheat Kichidi, Soup of Green gram with Jaggery and coconut, Cereal almond milk,herbal tea., water-melon,apple,brocolli.",
-      Lunch: "Rice,carrots,green beans,ghee,ginger, rice(basmati),barley,cauliflower,wheat",
-      Dinner: "Durham flor chapathi,carrots,cherries, beans,apple juice,jaggery,snake gourd.,spinach,potatoes,rice,cucumber"
+      Breakfast: "Cereals with ginger and lime Ridge gourd,apple,brocolli,berries Quinoa with spices, milk/herbal tea",
+      Lunch: "Pasta oats,sweet potato,apples strawberry,tur dal,buttermilk. grape juice,garlic,ginger,honey chicken,rice,egg whites,",
+      Dinner: "Rice,cucumber,bananas,beans, ghee,fish,carrots,jaggery,kulfi,or ice cream. Rice,wheat,asparagus,olives,peas,lemon juice."
+   },
+   1: {
+      Breakfast: "Rice or wheat Kichidi Soup of Green gram with Jaggery and coconut Cereal almond milk,herbal tea. water-melon,apple,brocolli.",
+      Lunch: "Rice,carrots,green beans,ghee,ginger rice(basmati),barley,cauliflower,wheat",
+      Dinner: "Durham flor chapathi,carrots,cherries beans,apple juice,jaggery,snake gourd. spinach,potatoes,rice,cucumber"
     },
     2: {
-      Breakfast: "Green and fresh herb frittat, lemon juice, orange juice, Apple,grape fruits,honey and ginger, Oats and maple syrup,apple juice/herbal juice",
-      Lunch: "rice cakes,wheat,cucumber,sprouts boiled,apricots, kiwi,buttermilk,snake gourd,cucumber,rice.,green beans, peas,pumpkin.",
-      Dinner: "Buttermilk,soyasauce,orange juice,Rice,turnip,strawberries,mung dhal,apples,potatoes,rice,spinach,lemon juice"
+      Breakfast: "Green and fresh herb frittat lemon juice, orange juice Apple,grape fruits,honey and ginger Oats and maple syrup,apple juice/herbal juice",
+      Lunch: "rice cakes,wheat,cucumber,sprouts boiled,apricots, kiwi,buttermilk,snake gourd,cucumber,rice. green beans, peas,pumpkin.",
+      Dinner: "Buttermilk,soyasauce,orange juice Rice,turnip,strawberries,mung dhal, apples,potatoes,rice,spinach,lemon juice"
     },
     3: {
-      Breakfast: "Rice soup with ghee and ginger,Slices of banana,sariva juice,Fresh coriander juice,Pancakes and honey,goat milk/herbal tea",
-      Lunch: "Rice,Ridge gourd,sweet potato,urad-dal,orange,buttermilk,cashews,coconut,turdal,urad-dal,rice,soyabeans,yoghurt",
-      Dinner: "Quinoa,fish,cucumber,plum,tur-dal,fibers,olives,carrot juice.,cool dairy drinks,goat milk,grapes juice,rice"
+      Breakfast: "Rice soup with ghee and ginger Slices of banana sariva juice,Fresh coriander juice Pancakes and honey,goat milk/herbal tea",
+      Lunch: "Rice,Ridge gourd,sweet potato,urad-dal orange,buttermilk,cashews,coconut turdal,urad-dal,rice,soyabeans,yoghurt",
+      Dinner: "Quinoa,fish,cucumber,plum,tur-dal fibers,olives,carrot juice. cool dairy drinks,goat milk,grapes juice,rice"
     },
     4: {
-      Breakfast: "Hot cereals with soaked oatsand ghee,Apricots with cardamom,Banana juice,lime and cardamom,Pasta and brocolli,grape juice/herbal tea,pomegranates",
-      Lunch: "Rice,cucumber,banana,buttermilk,walnuts,ginger,basil,lemon juice  ,mixed green vegetables,rice,yoghurt,cucumber",
-      Dinner: "wheat flour dosa or chapathi,leafy greens,,avocado,cow milk,beans,saffron with milk,Fresh fruit juice,fresh basil leaves,goat milk"
+      Breakfast: "Hot cereals with soaked oatsand ghee Apricots with cardamom Banana juice,lime and cardamom Pasta and brocolli,grape juice/herbal tea,pomegranates",
+      Lunch: "Rice,cucumber,banana,buttermilk walnuts,ginger,basil,lemon juice  mixed green vegetables,rice,yoghurt,cucumber",
+      Dinner: "wheat flour dosa or chapathi,leafy greens, avocado,cow milk,beans,saffron with milk Fresh fruit juice,fresh basil leaves,goat milk"
     },
     5: {
-      Breakfast: "Mashed sweet potato rice with ginger and pepper,mango lassi,warm water with pepper and jeera,oats bran with honey,barley tea, avocado, sweet potato",
-      Lunch: "Wheat,carrots,cherries,black gram dal,buttermilk,walnuts,peanut apple juice honey,kidney beans rice,yoghurt,cucumber.",
-      Dinner: "seitan,corn,grapes,ghee,mango juice,cumine,fish,ice-cream,fresh cool dairy products,cow milk,cherries,spinach"
+      Breakfast: "Mashed sweet potato rice with ginger and pepper mango lassi,warm water with pepper and jeera oats bran with honey,barley tea, avocado, sweet potato",
+      Lunch: "Wheat,carrots,cherries,black gram dal,buttermilk walnuts,peanut apple juice honey kidney beans rice,yoghurt,cucumber.",
+      Dinner: "seitan,corn,grapes,ghee,mango juice,cumine fish,ice-cream,fresh cool dairy products cow milk,cherries,spinach"
     },
     6: {
-      Breakfast: "Paneer burji,Sweet dessert of wheat and dry fruits,Tapioca and spices(pepper),coconut milk",
-      Lunch: "Rice,bottle gourd,sweet potato,urad-Dal,,orange,buttermilk,cashews,coconut water,wheat,paneer,rice,yoghurt.",
-      Dinner: "Durham flour chapathi,radish boiled,plum,olives,apples,,black gram beans,pine nuts,apple juice,Asparagus,ghee,goat cheese,peas,potatoes,cucumber,watermelon,rice"
+      Breakfast: "Paneer burji Sweet dessert of wheat and dry fruits Tapioca and spices(pepper),coconut milk",
+      Lunch: "Rice,bottle gourd,sweet potato,urad-Dal, orange,buttermilk,cashews,coconut water wheat,paneer,rice,yoghurt.",
+      Dinner: "Durham flour chapathi,radish boiled,plum,olives,apples, black gram beans,pine nuts,apple juice,Asparagus,ghee,goat cheese,peas,potatoes,cucumber,watermelon,rice"
     }
   },
+
   pithVath: {
     oil: ["cold or wood pressed Mustard oil",
       "Ghee/Clarified Butter",
@@ -686,6 +689,7 @@ var foodData = {
       Dinner: "Durham flour chapathi,radish boiled,plum,apple juice,Thur dal, olives,mung beans,apples,pine nuts,Bottle gourd, peas Asparagus,ghee,goat cheese,potatoes,Pinto beans cucumber,watermelon,rice,spinach,Mushrooms"
     }
   },
+
   Oil: {
     0: "Kachchi Ghanni tel",
     1: "Mustard Oil",
@@ -694,46 +698,49 @@ var foodData = {
     4: "Ground Nut Oil",
     5: "Olive Oil",
     6: "Ghee/Clarified Butter"
-  }
-  // vathPith: {
-  //   0: {
-  //     Breakfast: "",
-  //     Lunch: "",
-  //     Dinner: ""
-  //   },
-  //   1: {
-  //     Breakfast: "",
-  //     Lunch: "",
-  //     Dinner: ""
-  //   },
-  //   2: {
-  //     Breakfast: "",
-  //     Lunch: "",
-  //     Dinner: ""
-  //   },
-  //   3: {
-  //     Breakfast: "",
-  //     Lunch: "",
-  //     Dinner: ""
-  //   },
-  //   4: {
-  //     Breakfast: "",
-  //     Lunch: "",
-  //     Dinner: ""
-  //   },
-  //   5: {
-  //     Breakfast: "",
-  //     Lunch: "",
-  //     Dinner: ""
-  //   },
-  //   6: {
-  //     Breakfast: "",
-  //     Lunch: "",
-  //     Dinner: ""
-  //   }
-  // }
+  },
 
+//   vathPith: {
+//     oil: [""],
+// 
+//     0: {
+//       Breakfast: " ",
+//       Lunch: " ",
+//       Dinner: " "
+//     },
+//     1: {
+//       Breakfast: " ",
+//       Lunch: " ",
+//       Dinner: " "
+//     },
+//     2: {
+//       Breakfast: " ",
+//       Lunch: " ",
+//       Dinner: " "
+//     },
+//     3: {
+//       Breakfast: " ",
+//       Lunch: " ",
+//       Dinner: " "
+//     },
+//     4: {
+//       Breakfast: " ",
+//       Lunch: " ",
+//       Dinner: " "
+//     },
+//     5: {
+//       Breakfast: " ",
+//       Lunch: " ",
+//       Dinner: " "
+//     },
+//     6: {
+//       Breakfast: " ",
+//       Lunch: " ",
+//       Dinner: " "
+//     }
 }
+
+
 
 var doshaIs = 0;
 userResponseSkelaton = Array(quiz.questions.length).fill(null);
