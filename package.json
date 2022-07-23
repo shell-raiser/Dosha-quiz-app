@@ -1,0 +1,28 @@
+{
+  "name": "dosha-quiz-app",
+  "version": "1.0.0",
+  "description": "A HTML Webpage to determine the dosha of a person, based on studies like [A SCIENTIFIC REVIEW ON DIETETICS IN AYURVEDA ACCORDING TO PRA-\r KRITI (INNATE CONSTITUTION)](http://www.iamj.in/current_issue/images/upload/1031_1036.pdf.)\r <br>\r This page is hosted on https://shell-raiser.github.io/Dosha-quiz-app/ for demo <br>\r The site is optimized to be used in an iframe, so doesnt look the best in the demo above\r ### Screenshots\r <img width=\"334\" alt=\"image\" src=\"https://user-images.githubusercontent.com/78999739/176102968-e9132a3b-956c-4f91-a8d9-8a5f00a4420f.png\">\r <img width=\"624\" alt=\"image\" src=\"https://user-images.githubusercontent.com/78999739/176103044-fe939cd9-ce4f-492d-8f50-22a795c7adb9.png\">",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shell-raiser/Dosha-quiz-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shell-raiser/Dosha-quiz-app/issues"
+  },
+  "homepage": "https://github.com/shell-raiser/Dosha-quiz-app#readme",
+  "dependencies": {
+    "@capacitor/android": "^3.6.0",
+    "@capacitor/cli": "^3.6.0",
+    "@capacitor/core": "^3.6.0",
+    "express": "^4.18.1",
+    "vue": "^2.7.8"
+  }
+}

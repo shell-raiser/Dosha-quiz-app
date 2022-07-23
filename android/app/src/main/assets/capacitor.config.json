@@ -1,0 +1,6 @@
+{
+	"appId": "com.testB3rapp",
+	"appName": "dosha-quiz-app",
+	"bundledWebRuntime": false,
+	"webDir": "assets"
+}
