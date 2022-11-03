@@ -228,13 +228,15 @@
 
 							<a v-if="doshaMode && questionIndex == 0" class="button" v-on:click="dietMode();">See Diet
 							</a>
-
+							<a v-if="!doshaMode && questionIndex == 0" class="button" href="https://ayurvers.com/tommorow-diet">Tommorow's Diet
+							</a>
 							<!-- next button -->
 							<a v-if="doshaMode" class="button"
 								:class="(userResponses[questionIndex]==null)?'':'is-active'" v-on:click="next();"
 								:disabled="questionIndex>=quiz.questions.length">
 								{{ 'Next' }}
 							</a>
+							
 
 						</nav>
 						<!--/pagination-->
