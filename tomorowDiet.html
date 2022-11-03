@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tommorow diet</title>
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css'>
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <!--container-->
+    <section class="container">
+
+        <!--questionBox-->
+        <div class="questionBox" id="app">
+
+            <!-- transition -->
+            <transition :duration="{ enter: 500, leave: 300 }" enter-active-class="animated zoomIn"
+                leave-active-class="animated zoomOut" mode="out-in">
+
+                <!--qusetionContainer-->
+                <div class="questionContainer">
+
+                    <header>
+                        <h1> Today's Diet</h1>
+                        <!--progress-->
+
+                        <!--/progress-->
+                    </header>
+
+                    <!-- questionTitle -->
+                    <!-- <h2 v-else class="titleContainer title"> Diet</h2> -->
+
+                    <!-- quizOptions -->
+                    <div class="optionContainer">
+
+                        <div
+                            v-if="!Vatha && !Pitta && !Kapha && !KaphaPitta && !VathaPitta && !PittaVatha && !VathaKapha && !KaphaVatha && !PittaKapha && !Tri">
+
+                            <button class="button" v-on:click="Vatha= true;">
+                                Vata
+                            </button>
+
+                            <button class="button" v-on:click="Pitta= true;">
+                                Pitta
+                            </button>
+
+                            <button class="button" v-on:click="Kapha= true;">
+                                Kapha
+                            </button>
+
+                            <button class="button" v-on:click="VathaPitta= true;">
+                                Vata-Pitta
+                            </button>
+                            <button class="button" v-on:click="PittaVatha= true;">
+                                Pitta-Vata
+                            </button>
+                            <button class="button" v-on:click="VathaKapha= true;">
+                                Vata Kapha
+                            </button>
+                            <button class="button" v-on:click="KaphaVatha= true;">
+                                Kapha Vata
+                            </button>
+                            <button class="button" v-on:click="PittaKapha= true;">
+                                Pitta Kapha
+                            </button>
+                            <button class="button" v-on:click="KaphaPitta= true;">
+                                Kapha Pitta
+                            </button>
+                            <button class="button" v-on:click="Tri= true;">
+                                Tri-Dosha
+                            </button>
+
+                        </div>
+
+                        <!-- <div v-if="Vatha || Pitta || Kapha || KaphaPitta || VathaPitta || PittaVatha || VathaKapha || KaphaVatha || PittaKapha || Tri"
+							class="option">
+							<p style="text-align: center;font-weight: bold;">This Month's Oil</p>
+							<p style="text-align: center;">{{ foodData.Oil[dateObj.getDay()] }}</p>
+						</div> -->
+                        <div v-if="Kapha" class="option">
+                            <strong>This Month's Oil</strong><br>
+                            {{ foodData.kafh.oil[(dateObj.getMonth())%(foodData.kafh.oil.length)] }}
+                        </div>
+                        <div v-if="Kapha" class="option" v-for="(foodTime,index) in foodData.kafh[dateObj.getDay()]"
+                            :key="index">
+                            <strong>{{index}}</strong> <br>
+                            {{ foodTime }}
+                        </div>
+
+                        <div v-if="Vatha" class="option">
+                            <strong>This Month's Oil</strong><br>
+                            {{ foodData.vath.oil[(dateObj.getMonth())%(foodData.vath.oil.length)] }}
+                        </div>
+                        <div v-if="Vatha" class="option" v-for="(foodTime,index) in foodData.vath[dateObj.getDay()]"
+                            :key="index">
+                            <strong>{{index}}</strong> <br>
+                            {{ foodTime }}
+                        </div>
+
+                        <div v-if="Pitta" class="option">
+                            <strong>This Month's Oil</strong><br>
+                            {{ foodData.pith.oil[(dateObj.getMonth())%(foodData.pith.oil.length)] }}
+                        </div>
+                        <div v-if="Pitta" class="option" v-for="(foodTime,index) in foodData.pith[dateObj.getDay()]"
+                            :key="index">
+                            <strong>{{index}}</strong> <br>
+                            {{ foodTime }}
+                        </div>
+
+
+                        <div v-if="VathaPitta" class="option">
+                            <strong>This Month's Oil</strong><br>
+                            {{ foodData.vathPith.oil[(dateObj.getMonth())%(foodData.vathPith.oil.length)] }}
+                        </div>
+                        <div v-if="VathaPitta" class="option"
+                            v-for="(foodTime,index) in foodData.vathPith[dateObj.getDay()]" :key="index">
+                            <strong>{{index}}</strong> <br>
+                            {{ foodTime }}
+                        </div>
+
+
+                        <div v-if="PittaVatha" class="option">
+                            <strong>This Month's Oil</strong>
+                            {{ foodData.pithVath.oil[(dateObj.getMonth())%(foodData.pithVath.oil.length)] }}
+                        </div>
+                        <div v-if="PittaVatha" class="option"
+                            v-for="(foodTime,index) in foodData.pithVath[dateObj.getDay()]" :key="index">
+                            <strong>{{index}}</strong> <br>
+                            {{ foodTime }}
+                        </div>
+
+
+                        <div v-if="VathaKapha" class="option">
+                            <strong>This Month's Oil</strong><br>
+                            {{ foodData.vathKafh.oil[(dateObj.getMonth())%(foodData.vathKafh.oil.length)] }}
+                        </div>
+                        <div v-if="VathaKapha" class="option"
+                            v-for="(foodTime,index) in foodData.vathKafh[dateObj.getDay()]" :key="index">
+                            <strong>{{index}}</strong> <br>
+                            {{ foodTime }}
+                        </div>
+
+
+                        <div v-if="KaphaVatha" class="option">
+                            <strong>This Month's Oil</strong><br>
+                            {{ foodData.kafhVath.oil[(dateObj.getMonth())%(foodData.kafhVath.oil.length)] }}
+                        </div>
+                        <div v-if="KaphaVatha" class="option"
+                            v-for="(foodTime,index) in foodData.kafhVath[dateObj.getDay()]" :key="index">
+                            <strong>{{index}}</strong> <br>
+                            {{ foodTime }}
+                        </div>
+
+
+                        <div v-if="PittaKapha" class="option">
+                            <strong>This Month's Oil</strong><br>
+                            {{ foodData.pithKafh.oil[(dateObj.getMonth())%(foodData.pithKafh.oil.length)] }}
+                        </div>
+                        <div v-if="PittaKapha" class="option"
+                            v-for="(foodTime,index) in foodData.pithKafh[dateObj.getDay()]" :key="index">
+                            <strong>{{index}}</strong> <br>
+                            {{ foodTime }}
+                        </div>
+
+
+
+                        <div v-if="KaphaPitta" class="option">
+                            <strong>This Month's Oil</strong><br>
+                            {{ foodData.kafhPith.oil[(dateObj.getMonth())%(foodData.kafhPith.oil.length)] }}
+                        </div>
+                        <div v-if="KaphaPitta" class="option"
+                            v-for="(foodTime,index) in foodData.kafhPith[dateObj.getDay()]" :key="index">
+                            <strong>{{index}}</strong> <br>
+                            {{ foodTime }}
+                        </div>
+
+
+                        <div v-if="Tri" class="option">
+                            <strong>This Month's Oil</strong>
+                            {{ foodData.tri.oil[(dateObj.getMonth())%(foodData.tri.oil.length)] }}
+                        </div>
+                        <div v-if="Tri" class="option" v-for="(foodTime,index) in foodData.tri[dateObj.getDay()]"
+                            :key="index">
+                            <strong>{{index}}</strong> <br>
+                            {{ foodTime }}
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </div>
+                <!--/questionContainer-->
+
+                <!--quizCompletedResult-->
+                
+                <!--/quizCompetedResult-->
+
+            </transition>
+
+        </div>
+        <!--/questionBox-->
+
+    </section>
+    <!--/container-->
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+    <script src="./tomDietScript.js"></script>
+
+</body>
+
+</html>
