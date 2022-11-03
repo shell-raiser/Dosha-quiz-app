@@ -6,7 +6,8 @@ from pathlib import Path
 import base64
 import re
 
-original_html_text = Path('index.html').read_text(encoding="utf-8")
+original_html_text = Path('tomorowDiet.html').read_text(encoding="utf-8")
+# original_html_text = Path('index.html').read_text(encoding="utf-8")
 soup = BeautifulSoup(original_html_text)
 
 # Find link tags. example: <link rel="stylesheet" href="css/somestyle.css">
